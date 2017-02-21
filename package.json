@@ -1,0 +1,26 @@
+{
+  "name": "sandrakadungure",
+  "version": "1.0.0",
+  "description": "stream1 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mauya/SKstream1.git"
+  },
+  "keywords": [
+    "angularjs",
+    "html",
+    "css",
+    "js",
+    "jquery"
+  ],
+  "author": "SKadungure",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mauya/SKstream1/issues"
+  },
+  "homepage": "https://github.com/Mauya/SKstream1#readme"
+}
