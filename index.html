@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SKstream1</title>
+    <base href="/"> <!-- needed for Angular HTML5 mode -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link type="text/css" src="/css/style.css">
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+
+    <style type="text/css">
+    body {
+      padding-top: 70px;
+    }
+  </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="HeaderController">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/">Music Band Prototype</a>
+     </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li ng-class="{ active: isActive('/')}"><a href="/">Home</a></li>
+        <li ng-class="{ active: isActive('/about')}"><a href="/about">About Us</a></li>
+        <li ng-class="{ active: isActive('/events')}"><a href="/events">Events</a></li>
+        <li ng-class="{ active: isActive('/gallery')}"><a href="/gallery">Gallery</a></li>
+        <li ng-class="{ active: isActive('/booking')}"><a href="/booking">Book Online</a></li>
+        <li ng-class="{ active: isActive('/contact')}"><a href="/contact">Contact Us</a></li>
+    </ul>
+	</div>
+
+	<div class="container-fluid text-center">   
+  	<div class="row content">
+	    <div class="col-sm-3 sidenav">
+	      <h4>News Feeds</h4>
+	      <h4>Latest single</h4>
+	      <h4>Blog posts</h4>
+	    </div>
+
+	    <div class="col-sm-9 text-left"> 
+	      <div ng-view></div>
+	    </div>
+    </div>
+    </div>
+  
+	<footer class="container-fluid text-center">
+  		<p>Footer Text</p>
+	</footer>
+
+	<script src='js/app.js'></script>
+	<script src='js/controllers/headerController.js'></script>
+
+</body>
+</html>
