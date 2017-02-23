@@ -1,40 +1,82 @@
-   html, body {
-    background: #fff;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+  body{
     margin: 0;
     padding: 0;
-    text-transform: lowercase;
+    position: relative;
+    font-family: Arial,sans-serif;
   }
- /* Remove the navbar's  margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    .navbar-default { margin : 0 !important; }
+  h1,h2,h3,h4{
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+    text-align: center;
+  }
+
+  /*Set black background color, white text */
+  .footer {
+    background-color: #555;
+    color: white;
+    padding-top: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .footer, .push{
+    height:80px;
+  }
+  /* Remove the navbar's  margin-bottom and rounded borders */ 
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 0px 15px;
+  }
+  .navbar-default { 
+    margin : 0 !important; 
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f7f1f1;
+    height: 100%;
+  }
     
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
     .sidenav {
-      padding-top: 20px;
-      background-color: #f7f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text */
-    footer {
-      background-color: #555;
-      color: white;
+      height: auto;
       padding: 15px;
     }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
+
+  uib-slide img {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+    display: block;
+    border: 2px solid #fff;
+    position:absolute;
+    background: -webkit-linear-gradient(top, black, white);
     }
+    img{
+    margin:auto;
+    }
+      :hover {
+        box-shadow: 0px 1px 4px #444;
+        transition: all .2s ease-in-out;
+        border-color: #fff;
+      }
+      
+    :active {
+      opacity: .74;
+      box-shadow: 0px 1px 8px #666;
+    }
+  
