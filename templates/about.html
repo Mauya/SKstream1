@@ -1,4 +1,22 @@
 <h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3> 
+  <div class="clearfix">
+  <div class="row">
+    <ul style="list-style-type: none; display:inline-block;">
+    <li ng-repeat="member in members" class="col-sm-4"> 
+      <img class="img-thumbnail" ng-src="{{member.image}}" alt="member.name">
+      <h4 class="imgTitle"><strong>{{member.name}}</strong></h4>
+        <p class="playinstrument" ng-model="play">{{member.play}}</p>
+      <div class="column-content">
+        <p class="caption">{{member.description}}</p> 
+      </div>
+      </li>
+     </ul>        
+  </div>
+  </div>
+
+
+
+<!-- <h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3> 
 
   <div class="row">
   <div class="col-sm-3 col-sx-6">
@@ -15,5 +33,5 @@
       </ul>       	
     </div>
   </div>
-
+ -->
   

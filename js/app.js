@@ -6,27 +6,24 @@ var app = angular.module('bandApp',
    'ui.bootstrap'
   ]);
 
-app.config(function ($routeProvider,$locationprovider) {
-  $routeProvider
-    .when("/home", {
-      controller: "homeController",
-      templateUrl: "templates/home.html"
+app.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
+    $routeProvider.when('/', {
+        templateUrl: 'templates/home.html',
+        controller: 'homeController'
     })
-    .when("/about", {
-      controller: "aboutController",
-        templateUrl: "templates/about.html"     
+    .when('/about', {
+        templateUrl: 'templates/about.html',
+        controller: 'aboutController'
     })    
-    // .when('/photos/:id', {
-    //   controller: "PhotoController",
-    //   templateUrl: "templates/photo.html"
-    // })
     .when("/header", {
       controller: "headerController",
       templateUrl: "templates/home.html"
     })
-
-    $locationprovider.html5Mode(true);
     .otherwise({
-      redirectTo: '/'
-    });
-});
+        redirectTo: '/'
+    })
+    $locationProvider.html5Mode(true);    
+}]);
+
+    
+
