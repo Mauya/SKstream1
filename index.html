@@ -2,24 +2,19 @@
 <html ng-app="bandApp">
 <head>
     <title>SKstream1</title>
-    <base href="/"> <!-- needed for Angular HTML5 mode -->
+    <base href='/'/> <!-- needed for Angular HTML5 mode -->
     <link href="/css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
   	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> 
   
 	<!-- below scripts needed for carousel -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-touch.min.js"></script>
 	<script type="text/javascript" src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.2.js"></script>
-
-    <style type="text/css">
-    body {
-      padding-top: 70px;
-    }
-  </style>
+	
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="headerController">
@@ -54,6 +49,21 @@
       <div class="container text-center" style="height: 80px">
         <p class="text-muted" style="color:#fff"><strong>Copyright &copy; 2016<span id="Owner">Swing crew</span> by SMK</strong></p>
       </div>
+      <div class="social row">
+        <div class="social-link">
+            <a href="https://twitter.com/A" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+        </div>
+        <div class="social-link">
+            <a href="https://uk.linkedin.com/A" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+        </div>
+        <div class="social-link">
+            <a href="https://github.com/A><i class="fa fa-github fa-lg" target="_blank"></i></a>
+        </div>
+        <div class="social-link">
+            <a href="https://codepen.io/M#" target="_blank"><i class="fa fa-codepen fa-lg"></i></a>
+        </div>
+    </div>
+
     </footer>
 
 

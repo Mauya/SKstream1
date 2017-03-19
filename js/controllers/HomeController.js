@@ -1,5 +1,5 @@
 app.controller('homeController', ['$scope', function($scope) {
-  $scope.title = "Swing Crew Events!";
+  $scope.title = "Swing Crew Events";
   $scope.title1 = "This is Our Music Welcome";
   $scope.myInterval = 5000;
   $scope.noWrapSlides=false;

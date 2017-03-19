@@ -6,14 +6,14 @@ var app = angular.module('bandApp',
    'ui.bootstrap'
   ]);
 
-app.config(function ($routeProvider) {
+app.config(function ($routeProvider,$locationprovider) {
   $routeProvider
-    .when("/", {
+    .when("/home", {
       controller: "homeController",
       templateUrl: "templates/home.html"
     })
     .when("/about", {
-      controller: "AboutController",
+      controller: "aboutController",
         templateUrl: "templates/about.html"     
     })    
     // .when('/photos/:id', {
@@ -24,6 +24,8 @@ app.config(function ($routeProvider) {
       controller: "headerController",
       templateUrl: "templates/home.html"
     })
+
+    $locationprovider.html5Mode(true);
     .otherwise({
       redirectTo: '/'
     });

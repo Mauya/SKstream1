@@ -1,13 +1,13 @@
-<h2>{{title}}</h2>
+<h3>{{title}}</h3>
   <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
     <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
       <img ng-src="{{slide.image}}" style="margin:auto; height:350px; width:700px;">
     </uib-slide>
       <div class="carousel-caption">
-      	<h3 class="center">{{slide.caption}}</h3>
-        <h3 style="text-shadow: rgb(102, 102, 153) 3px 3px 3px">Slide {{slide.id}}</h3>
+      	<p class="center" ng-model="caption">{{slide.caption}}</p>
+        <h3 style="text-shadow: rgb(102, 102, 153) 3px 3px 3px">Slide {{slide.i}}</h3>
       </div>
   	</uib-carousel>
 
-<h3>{{title1}}</h3><br />
+<h4>{{title1}}</h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra risus eget massa varius, vitae sodales turpis condimentum. Mauris a mauris molestie, sagittis libero at, pellentesque dui. Nulla consequat finibus risus id congue. Pellentesque sed nisl at enim malesuada ultricies. Integer semper sit amet massa at suscipit. Vivamus elementum rutrum convallis. Aenean egestas ante lorem, non bibendum lacus sodales vel.</p>
