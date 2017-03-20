@@ -14,6 +14,10 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
     .when('/about', {
         templateUrl: 'templates/about.html',
         controller: 'aboutController'
+    })
+    .when('/contact', {
+        templateUrl: 'templates/contact.html',
+        controller: 'contactController'
     })    
     .when("/header", {
       controller: "headerController",

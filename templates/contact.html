@@ -1,0 +1,42 @@
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><strong>Tell us something!</strong></p>
+
+  <div class="row">
+    <div class="col-md-3">
+      <p><strong>Feel free to contact us anytime</strong></p>
+        <div ng-model="address"><span class="glyphicon glyphicon-map-marker"></span>Address:{{contact.address}}</div>
+      <div ng-model="telephone"><span class="glyphicon glyphicon-phone" ng-model></span> Telephone:{{contact.telephone}}</div>
+      <div ng-model="email"><span class="glyphicon glyphicon-envelope" ng-model></span> Email Address:{{contact.email}}</div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input name = "name" type = "text" ng-model ="contact.name" required="true" id="FullName">
+           <span style = "color:red" ng-show = "contactForm.name.$dirty && contactForm.name.$invalid">
+            <span ng-show = "contactForm.firstname.$error.required">Full Name is required.</span>
+           </span> 
+          </div>         
+
+        <div class="col-sm-6 form-group">
+          <input name = "email" type = "email" ng-model = "email" length = "100" required>
+           <span style = "color:red" ng-show = "contactForm.email.$dirty && contactForm.email.$invalid">
+            <span ng-show = "contactForm.email.$error.required">Email is required.</span>
+            <span ng-show = "contactForm.email.$error.email">Invalid email address.</span>
+           </span>
+          </div>
+      </div>
+      <br/>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="6"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-9 form-group">
+          <button class="btn pull-right btn-default" ng-click = "reset()">Reset</button>
+        </div>
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right btn-default" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
