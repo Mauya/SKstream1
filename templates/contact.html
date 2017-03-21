@@ -10,7 +10,53 @@
       <div ng-model="email"><span class="glyphicon glyphicon-envelope" ng-model></span> Email Address:{{contact.email}}</div>
     </div>
 
-    <div class="col-md-6">
+    <form name="contactForm" novalidate>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6 form-group">
+        <!-- NAME -->
+            <div ng-class="{'form-error':contactForm.name.$dirty && contactForm.name.$invalid, 'form-group':true}">
+              <input type="text" name="name" ng-model="formData.name" placeholder="Full Name" ng-minlength="3" required="" />
+              <div ng-messages="contactForm.name.$error" ng-show="contactForm.name.$dirty" >
+                <div ng-message="minlength">Name too short</div>
+                <div ng-message="required">Required Name</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 form group">
+        <!-- EMAIL -->
+            <div ng-class="{'form-error':contactForm.email.$dirty && contactForm.email.$invalid, 'form-group':true}">
+              <input type="email" name="email" ng-model="formData.email" placeholder="Email address" required/>
+              <div ng-messages="contactForm.email.$error" ng-show="contactForm.email.$dirty">
+                <div ng-message="email">Invalid Email</div>
+                <div ng-message="required">Required Email</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 form group">
+        <!-- TEL -->
+            <div ng-class="{'form-error':contactForm.tel.$dirty && contactForm.tel.$invalid, 'form-group':true}">
+              <input type="text" name="tel" ng-pattern=/\d{3}-\d{3}-\d{4}/ ng-model="formData.tel" placeholder="Telephone number" required />
+              <div ng-messages="contactForm.tel.$error" ng-show="contactForm.tel.$dirty">
+                <div ng-message="pattern">Valid form: XXX-XXX-XXXX</div>
+                <div ng-message="required">Required Phone</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="6"></textarea>
+      <br>
+        <!-- SUBMIT BUTTON -->
+        <input type="submit" ng-click="processForm()" ng-disabled="contactForm.$invalid" value="submit" />
+      </form>
+    </div>
+
+    <!-- <div class="col-md-6">
       <div class="row">
         <div class="col-sm-6 form-group">
           <input name = "name" type = "text" ng-model ="contact.name" required="true" id="FullName">
@@ -21,22 +67,21 @@
 
         <div class="col-sm-6 form-group">
           <input name = "email" type = "email" ng-model = "email" length = "100" required>
+            <div>
            <span style = "color:red" ng-show = "contactForm.email.$dirty && contactForm.email.$invalid">
             <span ng-show = "contactForm.email.$error.required">Email is required.</span>
             <span ng-show = "contactForm.email.$error.email">Invalid email address.</span>
            </span>
+           </div>
           </div>
       </div>
       <br/>
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="6"></textarea>
       <br>
       <div class="row">
-        <div class="col-md-9 form-group">
-          <button class="btn pull-right btn-default" ng-click = "reset()">Reset</button>
-        </div>
         <div class="col-md-12 form-group">
-          <button class="btn pull-right btn-default" type="submit">Submit</button>
+          <button class="btn pull-right btn-default" type="submit" ng-click ="submit">Submit</button>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
