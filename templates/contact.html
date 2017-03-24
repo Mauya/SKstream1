@@ -4,10 +4,84 @@
 
   <div class="row">
     <div class="col-md-3">
-      <p><strong>Feel free to contact us anytime</strong></p>
-        <div ng-model="address"><span class="glyphicon glyphicon-map-marker"></span>Address:{{contact.address}}</div>
-      <div ng-model="telephone"><span class="glyphicon glyphicon-phone" ng-model></span> Telephone:{{contact.telephone}}</div>
-      <div ng-model="email"><span class="glyphicon glyphicon-envelope" ng-model></span> Email Address:{{contact.email}}</div>
+      <p><strong>Drop us a Line</strong></p>
+      <h4>{{contact1}}</h4>
+      <div ng-model="name">
+        <span class="glyphicon glyphicon-user"></span>
+      Address:{{general.name}}
+      </div>
+      <br>
+    
+      <div ng-model="address">
+        <span class="glyphicon glyphicon-map-marker"></span>
+      Address:{{general.address}}
+      </div>
+      <br>
+      
+      <div ng-model="email">
+        <span class="glyphicon glyphicon-envelope"></span>
+      Email Address:{{general.email}}
+      </div>
+      <br>
+
+      <div ng-model="telephone">
+        <span class="glyphicon glyphicon-phone"></span>
+      Telephone:{{general.telephone}}
+      </div><br><br>
+
+      <h4>{{contact2}}</h4>
+      <div ng-model="name">
+        <span class="glyphicon glyphicon-user"></span>
+      Address:{{management.name}}
+      </div>
+      <br>
+
+      <div ng-model="email">
+        <span class="glyphicon glyphicon-envelope"></span>
+      Email Address:{{management.email}}
+      </div>
+      <br>
+
+      <div ng-model="telephone">
+        <span class="glyphicon glyphicon-phone"></span>
+      Telephone:{{management.telephone}}
+      </div><br><br>
+
+      <h4>{{contact3}}</h4>
+      <div ng-model="name">
+        <span class="glyphicon glyphicon-user"></span>
+      Address:{{booking.name}}
+      </div>
+      <br>
+
+        <div ng-model="email">
+          <span class="glyphicon glyphicon-envelope"></span>
+      Email Address:{{booking.email}}
+        </div>
+      <br>
+
+      <div ng-model="telephone">
+        <span class="glyphicon glyphicon-phone"></span>
+      Telephone:{{booking.telephone}}
+      </div><br><br>
+
+      <h4>{{contact4}}</h4>
+      <div ng-model="name">
+        <span class="glyphicon glyphicon-user"></span>
+      Address:{{pr.name}}
+      </div>
+      <br>
+
+      <div ng-model="email">
+        <span class="glyphicon glyphicon-envelope"></span>
+      Email Address:{{pr.email}}
+      </div>
+      <br>
+
+      <div ng-model="telephone">
+        <span class="glyphicon glyphicon-phone"></span>
+      Telephone:{{pr.telephone}}
+      </div><br>
     </div>
 
     <form name="contactForm" novalidate>
@@ -16,7 +90,7 @@
           <div class="col-md-6 form-group">
         <!-- NAME -->
             <div ng-class="{'form-error':contactForm.name.$dirty && contactForm.name.$invalid, 'form-group':true}">
-              <input type="text" name="name" ng-model="formData.name" placeholder="Full Name" ng-minlength="3" required="" />
+              <input type="text" name="name" ng-model="formname" placeholder="Full Name" ng-minlength="3" required="" />
               <div ng-messages="contactForm.name.$error" ng-show="contactForm.name.$dirty" >
                 <div ng-message="minlength">Name too short</div>
                 <div ng-message="required">Required Name</div>
@@ -27,7 +101,7 @@
           <div class="col-md-6 form group">
         <!-- EMAIL -->
             <div ng-class="{'form-error':contactForm.email.$dirty && contactForm.email.$invalid, 'form-group':true}">
-              <input type="email" name="email" ng-model="formData.email" placeholder="Email address" required/>
+              <input type="email" name="email" ng-model="formemail" placeholder="Email address" required/>
               <div ng-messages="contactForm.email.$error" ng-show="contactForm.email.$dirty">
                 <div ng-message="email">Invalid Email</div>
                 <div ng-message="required">Required Email</div>
@@ -40,7 +114,7 @@
           <div class="col-md-6 form group">
         <!-- TEL -->
             <div ng-class="{'form-error':contactForm.tel.$dirty && contactForm.tel.$invalid, 'form-group':true}">
-              <input type="text" name="tel" ng-pattern=/\d{3}-\d{3}-\d{4}/ ng-model="formData.tel" placeholder="Telephone number" required />
+              <input type="text" name="tel" ng-pattern=/\d{3}-\d{3}-\d{4}/ ng-model="formtel" placeholder="Telephone number" required />
               <div ng-messages="contactForm.tel.$error" ng-show="contactForm.tel.$dirty">
                 <div ng-message="pattern">Valid form: XXX-XXX-XXXX</div>
                 <div ng-message="required">Required Phone</div>
@@ -53,8 +127,9 @@
       <br>
         <!-- SUBMIT BUTTON -->
         <input type="submit" ng-click="processForm()" ng-disabled="contactForm.$invalid" value="submit" />
-      </form>
-    </div>
+      </div>
+    </form>
+  </div>
 
     <!-- <div class="col-md-6">
       <div class="row">

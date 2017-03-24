@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="eventcontainer">
+    <h1>What can we do for you?</h1>
+  </div>
+</div>
+
+<div class="card" ng-repeat="event in events">
+  <event-info info="event"></event-info>
+</div><br><br><br>
+
+<div id="slides_control">
+  <h3 ng-model="title">{{reviewtitle}}</h3>
+  	<uib-carousel interval="setInterval">
+      <uib-slide ng-repeat="slide in slides track by slide.id" active="slide.active:0">
+        <div class="carousel-review" ng-model="slide.fan">
+          <p>{{slide.review}}</p>
+        </div>
+      </uib-slide>
+  	</uib-carousel>
+</div>
+   
