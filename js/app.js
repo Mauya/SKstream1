@@ -15,8 +15,8 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         templateUrl: 'templates/about.html',
         controller: 'aboutController'
     })
-    .when('/contact', {
-        templateUrl: 'templates/contact.html',
+    .when('/events', {
+        templateUrl: 'templates/events.html',
         controller: 'eventsController'
     })
     .when('/contact', {

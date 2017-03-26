@@ -1,4 +1,5 @@
-<img class="image" ng-src="{{ info.image }}"> 
-<h2 class="title">{{ info.title }}</h2> 
-<p class="contact">{{ info.contact }}</p> 
-<a href="#"><button  class="btn btn-active switch" ng-click="Book Now">{{ info.switch}}</button></a>
+<div class=col-sm-3>
+<img class="image" style="width:200px; height:200px" ng-src="{{ info.image }}"> 
+<h4 class="title">{{ info.title }}</h4>  
+<a href="#"><button  class="btn btn-active button pull-right" ng-click="Book Now">{{info.button}}</button></a>
+</div>

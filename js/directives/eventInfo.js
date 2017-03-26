@@ -3,7 +3,7 @@ app.directive('eventInfo', function() {
     restrict: 'E', 
     scope: { 
       info: '=' 
-    }, 
+    },
     templateUrl: 'js/directives/eventInfo.html' 
   }; 
 });

@@ -4,76 +4,26 @@
 
   <div class="row">
     <div class="col-md-3">
-      <p><strong>Drop us a Line</strong></p>
-      <h4>{{contact1}}</h4>
-      <div ng-model="address">
+    <div class="contact" ng-repeat="c in contacts">
+      <h4 ng-model="department">{{c.department}}</h4>
+        <p ng-model="address">
         <span class="glyphicon glyphicon-user"></span>
-      Address:{{general.address}}
-      </div>
-    
-      <div ng-model="name">
+        Address:{{c.address}}
+      </p>    
+      <p ng-model="name">
         <span class="glyphicon glyphicon-map-marker"></span>
-      Address:{{general.name}}
-      </div>
-      
-      <div ng-model="email">
+      Name:{{c.name}}
+      </p>      
+      <p ng-model="email">
         <span class="glyphicon glyphicon-envelope"></span>
-      Email Address:{{general.email}}
-      </div>
-
-      <div ng-model="telephone">
+      Email Address:{{c.email}}
+      </p>
+      <p ng-model="telephone">
         <span class="glyphicon glyphicon-phone"></span>
-      Telephone:{{general.telephone}}
-      </div>
-
-      <h4>{{contact2}}</h4>
-      <div ng-model="name">
-        <span class="glyphicon glyphicon-user"></span>
-      Address:{{management.name}}
-      </div>
-
-      <div ng-model="email">
-        <span class="glyphicon glyphicon-envelope"></span>
-      Email Address:{{management.email}}
-      </div>
-
-      <div ng-model="telephone">
-        <span class="glyphicon glyphicon-phone"></span>
-      Telephone:{{management.telephone}}
-      </div>
-
-      <h4>{{contact3}}</h4>
-      <div ng-model="name">
-        <span class="glyphicon glyphicon-user"></span>
-      Address:{{booking.name}}
-      </div>
-
-        <div ng-model="email">
-          <span class="glyphicon glyphicon-envelope"></span>
-      Email Address:{{booking.email}}
-        </div>
-
-      <div ng-model="telephone">
-        <span class="glyphicon glyphicon-phone"></span>
-      Telephone:{{booking.telephone}}
-      </div>
-
-      <h4>{{contact4}}</h4>
-      <div ng-model="name">
-        <span class="glyphicon glyphicon-user"></span>
-      Address:{{pr.name}}
-      </div>
-
-      <div ng-model="email">
-        <span class="glyphicon glyphicon-envelope"></span>
-      Email Address:{{pr.email}}
-      </div>
-
-      <div ng-model="telephone">
-        <span class="glyphicon glyphicon-phone"></span>
-      Telephone:{{pr.telephone}}
-      </div>
+      Telephone:{{c.telephone}}
+      </p>
     </div>
+  </div>
 
     <form name="contactForm" novalidate>
       <div class="col-md-6">
@@ -114,7 +64,7 @@
           </div>
         </div>
         <br>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="6"></textarea>
+        <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="6"></textarea>
       <br>
         <!-- SUBMIT BUTTON -->
         <input type="submit" ng-click="processForm()" ng-disabled="contactForm.$invalid" value="submit" />
