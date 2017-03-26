@@ -2,8 +2,8 @@ angular.module('RouteControllers', [])
 app.controller('contactController', function($scope){
 $scope.contact1 = "General inquires";
   var general = {
-  	name: "Reception",
     address:"22 Old Lane, Dublin, Ireland TY6 LP16,",
+    name: "Reception",
     email:"general@swingcrew.ie",
     telephone: "xx xxx xxxx"
   };
@@ -11,7 +11,7 @@ $scope.contact1 = "General inquires";
 
 $scope.contact2 = "Management";
   var management = {
-  	name:"Tacy Mucha",
+  	name:"Tracy Mucha",
 	email:"info@swingcrew.ie",
 	telephone: "xx xxx xxxx"
   };
@@ -19,7 +19,7 @@ $scope.contact2 = "Management";
 
 $scope.contact3 = "Booking";
   var booking = {
-  	name:"Brookyln Jones",
+  name:"Brookyln Jones",
 	email:"booking@swingcrew.ie",
 	telephone: "xx xxx xxxx"
   };
@@ -27,7 +27,7 @@ $scope.contact3 = "Booking";
 
 $scope.contact4 = "Public Relations";
   var pr = {
-  	name:"Savanna Shaw",
+  name:"Savanna Shaw",
 	email:"pr@swingcrew.ie",
 	telephone: "xx xxx xxxx"
   };
