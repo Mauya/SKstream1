@@ -1,33 +1,8 @@
-<div id="container">
-  <h3 class="header" ng-model="memberTitle"><em>{{memberTitle}}</em></h3>
-      <ul class="resp-tabs-list hor_1">
-        <li ng-repeat="data in data | orderBy:'name'">
-          {{member.name}}
-        </li>
-      </ul>
-      <div class="resp-tabs-container hor_1"> 
-        <div class="profileData" id={{data.id}} ng-repeat="data in data | orderBy:'name'">
-          <div class="profileImage">
-            <img ng-src={{member.image}} alt="member.name" style="width:200 height:200"/>
-          </div>
-              <div class="profileDescription">
-                  <div class="profileName">
-                      <h4><strong>{{member.name}}</strong></h4>
-                  </div>
-                  <div class="playingstrument" ng-model="play">
-                      <h5><strong>{{member.Play}}</strong></h5>
-                  </div>
-                  <p class="caption">{{member.description}}</p>
-              </div>
-          </div>
-      </div>
-  </div>
-
-<!-- <h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3> 
+<h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3> 
   <div class="clearfix">
   <div class="row">
     <div class="thumbnail">
-      <ul style="list-style-type: none; display:inline-block;">
+      <ul style="list-style-type: none; display:inline-block; overflow:hidden;">
       <li ng-repeat="member in members" class="col-sm-4"> 
         <img ng-src="{{member.image}}" alt="member.name" style="width:200 height:200"/>
         <div class="column-content">
@@ -39,7 +14,7 @@
        </ul> 
     </div>       
   </div>
-  </div> -->
+  </div>
 
 
 
