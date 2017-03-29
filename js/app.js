@@ -22,7 +22,15 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
     .when('/contact', {
         templateUrl: 'templates/contact.html',
         controller: 'contactController'
-    })    
+    })
+    .when('/booking', {
+        templateUrl: 'templates/booking.html',
+        controller: 'bookingController'
+    }) 
+    .when('/gallery', {
+        templateUrl: 'templates/gallery.html',
+        controller: 'galleryController'
+    })       
     .when("/header", {
       controller: "headerController",
       templateUrl: "templates/home.html"

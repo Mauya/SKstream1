@@ -1,48 +1,47 @@
 <h3 ng-model="booking.Title">{{booking.Title}}</h3>
   <form name="bookingForm" method="post" ng-submit="bookingForm.$valid && handleFormSubmit(booking)" novalidate="" ng-hide="message">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-5">
         <div class="form-group">
           <label for="firstName">Your Name
             <span class="required">*</span>
           </label>
           <input ng-model="booking.name" type="text" class="form-control" id="firstName" name="name" placeholder="name" required="" />
         </div>
-      </div>
-    </div>
-    <div class="row">  
-      <div class="col-sm-6">
+      </div> 
+      <div class="col-sm-5">
         <div class="form-group">
           <label for="email">Email
-            <span class="required">*</span>
+          <span class="required">*</span>
           </label>
           <input ng-model="booking.email" type="email" class="form-control" id="email" name="email" placeholder="Email" required="" />
         </div>
       </div>
-        <div class="col-sm-4">
-          <div class="form-group">
-            <label for="telephone">Phone Number</label>
-            <input ng-model="booking.telephone" type="text" class="form-control" id="telephone" name="telephone" placeholder="Telephone"/>
-          </div>
+    </div>
+  <!-- /.row -->
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="form-group">
+          <label for="telephone">Phone Number</label>
+          <input ng-model="booking.telephone" type="text" class="form-control" id="telephone" name="telephone" placeholder="Telephone"/>
         </div>
       </div>
-<!-- /.row -->
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="form-group">
-            <label for="startDate">Required Date (if known) 
-              <span class="required"> *</span>
-            </label>
-              <p class="input-group">
-                <input type="date" class="form-control" datepicker-popup="{{format}}" is-open="opened1" min-date="minDate" max-date="" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-model="booking.startDate" name="dateRequired" id="startDate" ng-required="true" close-text="Close" ng-click="open($event)" />
-                <span class="input-group-btn">
-                  <button type="button" class="btn btn-default" ng-click="open($event)">
-                  <i class="glyphicon glyphicon-calendar"></i>
-                  </button>
-                </span>
-              </p>
-          </div>
-        </div>
+    <div class="col-sm-5">
+      <div class="form-group">
+        <label for="startDate">Required Date (if known) 
+          <span class="required"> *</span>
+        </label>
+          <p class="input-group">
+            <input type="date" class="form-control" datepicker-popup="{{format}}" is-open="opened1" min-date="minDate" max-date="" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-model="booking.startDate" name="dateRequired" id="startDate" ng-required="true" close-text="Close" ng-click="open($event)" />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="open($event)">
+              <i class="glyphicon glyphicon-calendar"></i>
+              </button>
+            </span>
+          </p>
+      </div>
+    </div>
+  </div>
 <!-- /.row -->
       <div class="row">
         <div class="col-sm-6">
@@ -58,32 +57,30 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="form-group">
-          <label>Package Options<span class="required"> *</span>
-          <em>(Select from below options)</em>
-          </label>
-          <select ng-model="eventType" class="form-control" name="EventType" id="Event" required="">
-              <option value="1">Bronze Package</option>
-              <option value="2">Deluxe</option>
-              <option value="3">Deluxe Plus</option>
-              <option value="4">Gold Package</option>
-              <option value="4">Platinum Package</option>
-              <option value="4">Premium Package</option>
-            </select>
-          </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Package Options<span class="required"> *</span>
+              <em>(Select from below options)</em>
+              </label>
+              <select ng-model="eventType" class="form-control" name="EventType" id="Event" required="">
+                  <option value="1">Bronze Package</option>
+                  <option value="2">Deluxe</option>
+                  <option value="3">Deluxe Plus</option>
+                  <option value="4">Gold Package</option>
+                  <option value="4">Platinum Package</option>
+                  <option value="4">Premium Package</option>
+                </select>
+              </div>
+            </div>
         </div>
-    </div>
+
     <div class="row">
-      <div class="col-sm-6">
-        <div class="form-group">
-          <label for="message">Message
-          <em>Please specify venue address if known</em>
-          </label>
-          <textarea placeholder="Other Important Details" ng-model="booking.message" name="message" id="details"></textarea>
-        </div>
+      <div class="col-sm-9 form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" placeholder="Other Important Details" rows="4"></textarea>
       </div>
-    </div>
+      </div>
 
       <div class="form-group">
         <button type="submit" ng-disabled="bookingForm.$invalid" value="Submit" class="btn btn-default">Submit</button>
