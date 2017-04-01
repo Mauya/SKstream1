@@ -3,13 +3,18 @@ var app = angular.module('bandApp',
    'RouteControllers',
    'ngAnimate', 
    'ngTouch', 
-   'ui.bootstrap'
+   'ui.bootstrap',
+   'mediaPlayer'
   ]);
 
 app.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.when('/', {
         templateUrl: 'templates/home.html',
         controller: 'homeController'
+    })
+    .when('/header', {      
+      templateUrl: 'templates/home.html',
+      controller: 'headerController'
     })
     .when('/about', {
         templateUrl: 'templates/about.html',
@@ -30,15 +35,7 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
     .when('/gallery', {
         templateUrl: 'templates/gallery.html',
         controller: 'galleryController'
-    })
-    .when('/music', {
-        templateUrl: 'templates/music.html',
-        controller: 'musicController'
-    })    
-    .when("/header", {
-      controller: "headerController",
-      templateUrl: "templates/home.html"
-    })
+    })       
     .otherwise({
         redirectTo: '/'
     })

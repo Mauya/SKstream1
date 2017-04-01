@@ -1,0 +1,89 @@
+<div class="container">
+ <div class="col-sm-7 col-xs-12">
+    <div class="column center">
+        <h1>{{musicTitle}}</h1>
+    </div>
+
+    <div class="column add-bottom">
+        <div id="mainwrap">
+            <div id="nowPlay">
+                <span class="left" id="npAction">Paused...</span>
+                <span class="right" id="npTitle"></span>
+            </div>
+            <div id="audiowrap">
+                <div>
+                <a>
+                    <span class="glyphicon glyphicon-step-backward" ng-click="myAudioService.previous()"></span>
+                </a>
+                <a>
+                    <span class="glyphicon glyphicon-play" ng-click="myAudioService.play()"></span>
+                </a>
+                <a>
+                    <span class="glyphicon glyphicon-pause" ng-click="myAudioService.pause()"></span>
+                </a>
+                <a>
+                    <span class="glyphicon glyphicon-step-forward" ng-click="myAudio.next()"></span>
+                </a>
+                </div>
+            </div>
+            
+            <div id="tracks">
+                    <a rel="nofollow" rel="noreferrer"id="btnPrev">&laquo;</a>
+                    <a rel="nofollow" rel="noreferrer"id="btnNext">&raquo;</a>
+                </div>
+
+
+            <div id="listwrap">
+                <ul id="audioList"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- <div class="container">
+    <div class="column center">
+
+        <h2>{{musicTitle}}</h2>
+            <div id="mainwrap">
+                <a>
+                    <span class="glyphicon glyphicon-step-backward"></span>
+                </a>
+                <a>
+                    <span class="glyphicon glyphicon-play"></span>
+                </a>
+                <a>
+                    <span class="glyphicon glyphicon-pause"></span>
+                </a>
+                <a>
+                    <span class="glyphicon glyphicon-step-forward"></span>
+                </a>
+            </div>
+
+            <div id="audiowrap">
+                <a>
+                    <span class="glyphicon glyphicon-step-backward" ng-click="myAudioPlayer.previous()"></span>
+                </a>
+                <a>
+                    <span class="glyphicon glyphicon-play" ng-click="myAudioPlayer.play()"></span>
+                </a>
+                <a>
+                    <span class="glyphicon glyphicon-pause" ng-click="myAudioPlayer.pause()"></span>
+                </a>
+                <a>
+                    <span class="glyphicon glyphicon-step-forward" ng-click="mymediaPlayer.next()"></span>
+                </a>
+            </div>
+
+        <audio media-player="audio" data-playlist="AudioList1">
+            <source src="{{audioList.Audio}}" type="audio/mp3">
+            <p>{{currentIndex}}</p>
+          </audio>
+        <div id="playwrap">
+            <p>Now Playing: <img width="30" height="30" src="{{info.image}}" /></p>
+            <ul>{{audioList.Audio}} - {{currentIndex}}</ul>
+        </div>
+    </div>
+</div>
+ -->
