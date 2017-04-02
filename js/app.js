@@ -24,15 +24,19 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
     .when('/booking', {
         templateUrl: 'templates/booking.html',
         controller: 'bookingController'
+    })
+    .when('/gallery', {
+        templateUrl: 'templates/gallery.html',
+        controller: 'galleryController'
     })  
     // .when('/music', {
     //     templateUrl: 'templates/music.html',
     //     controller: 'musicController'
     // })
-    // .when('/video', {
-    //     templateUrl: 'templates/video.html',
-    //     controller: 'videoController'
-    // })
+    .when('/video', {
+        templateUrl: 'templates/video.html',
+        controller: 'videoController'
+    })
     // .when('/photo', {
     //     templateUrl: 'templates/photo.html',
     //     controller: 'photoController'

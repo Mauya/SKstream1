@@ -23,8 +23,8 @@
 	
 </head>
 <body>
-    <div class="navbar-header navbar-inverse navbar-fixed-top" ng-controller="headerController">
-    <div class="navbar">
+    <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="headerController">
+    <div class="navbar-header">
         <a class="navbar-brand" href="/">Music Band Prototype</a>
      </div>
     <ul class="nav navbar-nav navbar-right">
@@ -33,11 +33,12 @@
       </li>
       <li ng-class="{ active: isActive('/about')}"><a href="/about">About Us</a></li>
       <li ng-class="{ active: isActive('/events')}"><a href="/events">Events</a></li>
-      <li ng-class="{ active: isActive('/gallery')}">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="/gallery">Gallery<span class="caret"></span></a>
+      <li ng-class="dropdown">      
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery
+              <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li ng-class="{ active: isActive('/music')}"><a href="/music">Music</a></li>
-          <li ng-class="{ active: isActive('/videos')}"><a href="/videos">videos</a></li>
+          <li ng-class="{ active: isActive('/videos')}"><a href="/video">video</a></li>
           <li ng-class="{ active: isActive('/photos')}"><a href="/photo">Photos</a></li> 
         </ul>
       </li>
@@ -143,9 +144,12 @@
   <script src='js/controllers/eventsController.js'></script>
   <script src='js/controllers/bookingController.js'></script>
   <script src='js/controllers/GalleryController.js'></script>
+  <script src='js/controllers/musicController.js'></script>
+  <script src='js/controllers/videoController.js'></script>
   <script src='js/directives/eventInfo.js'></script>
   <script src='js/directives/mediaplayer.js'></script>
   <script src='js/services/audioservice.js'></script>
+  <script src='js/directives/videoInfo.js'></script>
   
 
 </body>
