@@ -4,6 +4,6 @@ app.controller('musicController', ['$scope', 'audiofactory', 'audioService', fun
     $scope.audio = audioService.audioPlayer;
     $scope.update = function(){
       $scope.audio.isPaused;
-      $scope.audioList=Audio;
+      $scope.audioList=audiolist;
     }
 }]);

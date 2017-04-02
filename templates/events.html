@@ -9,7 +9,7 @@
   <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
     <uib-slide ng-repeat="slide in slides" index="slide.id">
       <h3 class="center" ng-model="review">{{slide.review}}</h3>
-      <span>{{slide:fan}}</span>
+      <span>{{slide.fan}}</span>
     </uib-slide>
       <div class="carousel-caption">
         <h5>{{slide.id}}</h5>

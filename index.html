@@ -23,12 +23,14 @@
 	
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="headerController">
-    <div class="navbar-header">
+    <div class="navbar-header navbar-inverse navbar-fixed-top" ng-controller="headerController">
+    <div class="navbar">
         <a class="navbar-brand" href="/">Music Band Prototype</a>
      </div>
     <ul class="nav navbar-nav navbar-right">
-      <li ng-class="{ active: isActive('/')}"><a href="/">Home</a></li>
+
+      <li ng-class="{ active: isActive('/')}"><a href="/">Home</a>
+      </li>
       <li ng-class="{ active: isActive('/about')}"><a href="/about">About Us</a></li>
       <li ng-class="{ active: isActive('/events')}"><a href="/events">Events</a></li>
       <li ng-class="{ active: isActive('/gallery')}">
@@ -120,7 +122,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="row">
           <div class="footerbottom">

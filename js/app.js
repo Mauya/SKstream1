@@ -8,13 +8,10 @@ var app = angular.module('bandApp',
   ]);
 
 app.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
-    $routeProvider.when('/', {
+    $routeProvider
+    .when('/', {
         templateUrl: 'templates/home.html',
         controller: 'homeController'
-    })
-    .when('/header', {      
-      templateUrl: 'templates/home.html',
-      controller: 'headerController'
     })
     .when('/about', {
         templateUrl: 'templates/about.html',
@@ -24,18 +21,26 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         templateUrl: 'templates/events.html',
         controller: 'eventsController'
     })
-    .when('/contact', {
-        templateUrl: 'templates/contact.html',
-        controller: 'contactController'
-    })
     .when('/booking', {
         templateUrl: 'templates/booking.html',
         controller: 'bookingController'
-    }) 
-    .when('/gallery', {
-        templateUrl: 'templates/gallery.html',
-        controller: 'galleryController'
-    })       
+    })  
+    // .when('/music', {
+    //     templateUrl: 'templates/music.html',
+    //     controller: 'musicController'
+    // })
+    // .when('/video', {
+    //     templateUrl: 'templates/video.html',
+    //     controller: 'videoController'
+    // })
+    // .when('/photo', {
+    //     templateUrl: 'templates/photo.html',
+    //     controller: 'photoController'
+    // })  
+    .when('/contact', {
+        templateUrl: 'templates/contact.html',
+        controller: 'contactController'
+    })      
     .otherwise({
         redirectTo: '/'
     })
