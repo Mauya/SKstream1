@@ -14,6 +14,7 @@ app.controller('videoController',
         ],
         $scope.$on('$viewContentLoaded', function () {
         
-        $scope.myPlayer.play();
+        $scope.mediaPlayer.play();
     });
 }]);
+

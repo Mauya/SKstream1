@@ -1,8 +1,9 @@
-app.directive('mediaPlayer',
-function () {
+app.directive('mediaPlayer', function () {
 	return {
-		restrict: 'A',
-		scope: false,
+		restrict: 'E',
+		scope:{
+			info: "="
+		},
 		videoUrl: 'templates/videoInfo.html',
 		link: function (scope, element, attr) {
 			
