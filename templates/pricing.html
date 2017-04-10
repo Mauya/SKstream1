@@ -1,3 +1,14 @@
-<div class="column" ng-repeat="pack in packages">
-  <price-info info="event"></price-info>
-</div>
+<div class="row">
+    <div class="col-sm-3 col-xs-12" ng-repeat="pack in packages">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>{{pack.type}}</h1>
+        </div>
+        <div class="panel-body">
+          <p class="grey"><strong>{{pack.price | currency}}</strong></p>
+          <p>{{pack.description}}</p>
+          <button class="grey"><a href="#" class="button">{{pack.contact}}</a></button>
+        </div>
+      </div>      
+    </div> 
+</div> 

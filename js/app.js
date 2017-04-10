@@ -33,18 +33,18 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         templateUrl: 'templates/gallery.html',
         controller: 'galleryController'
     })  
-    // .when('/music', {
-    //     templateUrl: 'templates/music.html',
-    //     controller: 'musicController'
-    // })
+    .when('/music', {
+        templateUrl: 'templates/music.html',
+        controller: 'musicController'
+    })
     .when('/video', {
         templateUrl: 'templates/video.html',
         controller: 'videoController'
     })
-    // .when('/photo', {
-    //     templateUrl: 'templates/photo.html',
-    //     controller: 'photoController'
-    // })  
+    .when('/photo', {
+        templateUrl: 'templates/photo.html',
+        controller: 'photoController'
+    })  
     .when('/contact', {
         templateUrl: 'templates/contact.html',
         controller: 'contactController'

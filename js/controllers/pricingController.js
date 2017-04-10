@@ -15,7 +15,7 @@ app.controller('pricingController', ['$scope', function($scope) {
 	  {
 	    type: 'Gold', 
 	    price: '£1199', 
-	    description: "'Live day and evening time intertainment', 'Hosting and Toasting', 'Disco Show'", 
+	    description: "'Live day and evening time intertainment', 'Hosting and Toasting', 'Disco Show' 'DJ and music intertaiment'", 
 	    contact: 'Enquire Today'
 	  },
 	  {

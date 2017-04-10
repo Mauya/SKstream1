@@ -140,31 +140,9 @@ text-align: center;
   margin-right:10px; 
   padding:10px;
   }
-
-  .price {
-    list-style-type: none;
-    border: 1px solid #eee;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
-
-.price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
-
-.price .header {
-    background-color: #111;
-    color: white;
-    font-size: 25px;
-}
-
-.price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  text-align: center;
-}
+  button .grey{
+    border-radius: 6px;
+  }
 
 .price .grey {
     background-color: #eee;
@@ -180,7 +158,48 @@ text-align: center;
     text-decoration: none;
     font-size: 18px;
 }
-
-
 /* style music.html */
+
+
+/*style photo.html */
+#gallery{
+  max-width: 80%;
+  margin: 15px auto;
+  background:  #e6e6ff;
+  padding: 15px;
+}
+.image-list{
+  display: flex;
+  margin-bottom: 15px;
+  }
+   img{
+    cursor: pointer;
+    display: block;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    max-height: 115px;
+    justify-content: center;
+    max-width: 33%;
+    width: 100%;
+    }
+
+    :hover{
+      opacity: 0.8;
+    }
+
+.band-image  img{
+  height: auto;
+  width: 100%;
+}
+  .ng-enter{
+    transform: translateY(-100px);
+    transition: all 0.3s;
+    opacity: 0;
+  }
+  .ng-active{
+    opacity: 1;
+    transform: translateY(0);
+  } 
+
   
