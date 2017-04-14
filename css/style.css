@@ -1,3 +1,8 @@
+/*styling the index page*/
+*{
+  margin:0;
+  padding:0;
+}
 html{
 overflow-y:scroll;
 }
@@ -93,6 +98,7 @@ text-align: center;
     -webkit-filter: grayscale(90%);
     filter: grayscale(90%); /* make all photos black and white */ 
     color:black;
+    width:80%;
     }
 
     img{
@@ -108,20 +114,14 @@ text-align: center;
         opacity: .74;
         box-shadow: 0px 1px 8px #666;
     }
-    .thumbnail{
-      display:inline-block;
-      width:200px;
-      height:75px;
-      margin:10px;
-      overflow: hidden;
+    /*about page */
+
+    .imgTitle{
+      text-align: center;
     }
-    .clearfix::after{
-      content:"";
-      clear:both;
-      display:table;
-    }  
-    .contact{
-      font-size:8px;
+    .img-responsive{
+      max-width: 100%;
+      height:auto;
     }
   
   .column {
@@ -158,6 +158,13 @@ text-align: center;
     text-decoration: none;
     font-size: 18px;
 }
+/* style event.html */
+.card div.repeat:nth-child(n+4):after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
 /* style music.html */
 
 

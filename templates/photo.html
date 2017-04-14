@@ -2,6 +2,6 @@
   <h1>Our Photo Gallery</h1>
   <div id="gallery" ng-init="selection = images[0]">
     <div class="image-list"><img ng-repeat="img in images" ng-src="{{img}}" ng-click="$parent.selection = img"/></div>
-    <div class="band-image"><img src="{{selection}}"/></div>
+    <div class="band-image"><img ng-src="{{selection}}"/></div>
   </div>
 </div>
