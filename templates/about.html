@@ -1,15 +1,28 @@
-<h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3>
-  <div class="container"> 
-    <div ng-repeat="member in members" ng-if="$index % 3 == 0" class="row">
-      <div class="col-sm-4 img-responsive"
-        ng-repeat="member in members.slice($index, ($index+3 > members.length ? members.length : $index+3))">
-          <img ng-src="{{member.image}}" alt="member.name">
-          <div class="column-content">
-            <h4 class="imgTitle"><strong>{{member.name}}</strong></h4>
-            <p class="playingstrument" ng-model="play">{{member.play}}</p>
-            <p class="caption">{{member.description}}</p> 
+<div id="container">
+  <h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3>
+    <div id="parentVerticalTab" ng-controller="aboutController">
+      <ul class="resp-tabs-list hor_1">
+        <li ng-repeat="member in members | orderBy:'name'">
+          {{member.name}}
+        </li>
+      </ul>
+
+      <div class="resp-tabs-container hor_1"> 
+        <div class="profileInfo" id={{member.id}} ng-repeat="member in members" | orderBy:"name">
+          <div class="profileImage small-image pull-left thumbnail">
+            <img ng-src={{member.image}}  alt="member.name"/>
+          </div>
+          <div class="profileDescription">
+            <div class="profileName">
+              {{member.name}} 
+            </div>
+            <p><em> {{member.instrument}}</em></p>
+            <p>{{member.description}}</p>
           </div>
         </div>
-      </div> 
-  </div>       
+      </div>
+  </div>
+  
 
+
+  

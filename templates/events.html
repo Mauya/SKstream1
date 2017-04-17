@@ -6,8 +6,8 @@
 
    
 <h3 ng-model="title">{{reviewtitle}}</h3>
-<div id="slides_control" class="carousel slide text-center" data-ride="carousel">
-  <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+<div id="slides_control" class="carousel-inner text-center" role="listbox">
+  <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
     <uib-slide ng-repeat="slide in slides" active="slide.active">
       <h3 class="textSlide" ng-model="review">{{slide.review}}</h3>
       <span><em>{{slide.fan}}</em></span>

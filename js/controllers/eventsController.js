@@ -24,7 +24,7 @@ app.controller('eventsController', ['$scope', function($scope) {
 	];
 
 	$scope.reviewtitle = 'What Our Fans are Saying!';    
-    $scope.setInterval = 3000;
+    $scope.myInterval = 3000;
     $scope.slides= [
       {
         review: "The band is the best, I was so satisfied with our wedding reception!",
