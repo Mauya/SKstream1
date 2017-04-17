@@ -50,22 +50,25 @@
     </ul>
 	</div>
 
-	<div class="container-fluid text-center">   
-  	<div class="row content">
-	    <div class="col-sm-3 sidenav" style="background-color: #f7f1f1">
-	      <h4>News Feeds</h4>
-          <p>Sed fermentum nulla purus, vitae aliquam ex congue eu. Proin in commodo eros. Phasellus feugiat odio nec convallis hendrerit. Duis consequat purus dolor, nec dictum ipsum tempus sed. Nulla interdum sed velit a semper. Vivamus sed odio a justo pellentesque ullamcorper aliquam ut erat. Cras finibus ultrices dolor sollicitudin aliquet.</p><button><a href="read">Read more...</a></button>
+	<div class="container-fluid text-center">
+    <div class="main_wrapper">  
+    	<div class="row content">
+  	    <div class="col-sm-3 side_news text-left">
+  	      <h4>News Feeds</h4>
+            <p>Sed fermentum nulla purus, vitae aliquam ex congue eu. Proin in commodo eros. Phasellus feugiat odio nec convallis hendrerit. Duis consequat purus dolor, nec dictum ipsum tempus sed. Nulla interdum sed velit a semper. Vivamus sed odio a justo pellentesque ullamcorper aliquam ut erat. Cras finibus ultrices dolor sollicitudin aliquet.</p><button><a href="read">Read more...</a></button>
 
-	      <h4>Latest single</h4>
-	      <h4>Blog posts</h4>
-	    </div>
+  	      <h4>Latest single</h4>
+  	      <h4>Blog posts</h4>
+        </div>
 
-	    <div class="col-sm-9 text-left"> 
-	      <div ng-view></div>
-	    </div>
+      <div class="main_section">
+  	    <div class="col-sm-8 text-left"> 
+  	      <div ng-view></div>
+  	    </div>
+      </div>
     </div>
-    </div>
-  
+  </div>
+
 	<footer class="footer" style="background-color: #555; color:#fff">
       <div class="footer-container">
         <div class="row">
@@ -74,6 +77,7 @@
               <h4 class="footertitle"><span>Booking Online</span></h4>
                 <p>booking@swingcrew.ie</p>
             </div>
+
             <div id="social-media" class="col-md-4 col-sm-6">
               <div class="social-links">
               <h4 class="footertitle"><span>Share with friends</span></h4>
@@ -111,6 +115,7 @@
                 </ul>
               </div>
             </div>
+
             <div id="subscribe-form" class="col-md-4 col-sm-6">
               <div class="subscribe">
               <h4 class="footertitle"><span>Subscribe for updates</span></h4>
@@ -143,26 +148,25 @@
         </div>
       </div>      
     </footer>
+  </div>
 
-
-	<script src='js/app.js'></script>
-	<script src='js/controllers/headerController.js'></script>
-	<script src='js/controllers/homeController.js'></script>
-	<script src='js/controllers/aboutController.js'></script>
-  <script src='js/controllers/contactController.js'></script>
-  <script src='js/controllers/eventsController.js'></script>
-  <script src='js/controllers/bookingController.js'></script>
-  <script src='js/controllers/pricingController.js'></script>
-  <script src='js/controllers/GalleryController.js'></script>
-  <script src='js/controllers/musicController.js'></script>
-  <script src='js/controllers/videoController.js'></script>
-  <script src='js/controllers/photoController.js'></script>
-  <script src='js/directives/eventInfo.js'></script>
-  <script src='js/directives/priceInfo.js'></script>
-  <script src='js/directives/mediaplayer.js'></script>
-  <script src='js/services/audioservice.js'></script>
-  <script src='js/directives/media/videoInfo.js'></script>
+  	<script src='js/app.js'></script>
+  	<script src='js/controllers/headerController.js'></script>
+  	<script src='js/controllers/homeController.js'></script>
+  	<script src='js/controllers/aboutController.js'></script>
+    <script src='js/controllers/contactController.js'></script>
+    <script src='js/controllers/eventsController.js'></script>
+    <script src='js/controllers/bookingController.js'></script>
+    <script src='js/controllers/pricingController.js'></script>
+    <script src='js/controllers/GalleryController.js'></script>
+    <script src='js/controllers/musicController.js'></script>
+    <script src='js/controllers/videoController.js'></script>
+    <script src='js/controllers/photoController.js'></script>
+    <script src='js/directives/eventInfo.js'></script>
+    <script src='js/directives/priceInfo.js'></script>
+    <script src='js/directives/mediaplayer.js'></script>
+    <script src='js/services/audioservice.js'></script>
+    <script src='js/directives/media/videoInfo.js'></script>
   
-
 </body>
 </html>

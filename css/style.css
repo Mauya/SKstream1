@@ -11,8 +11,11 @@ padding-top:70px;
 margin: 0;
 padding: 0;
 position: relative;
-font-size: 12px;
+font-size: 14px;
 font-family: Arial,sans-serif;
+width:100%;
+display:-webkit-box;
+-webkit-box-pack:center;
 }
 
 ul { list-style:none;
@@ -25,144 +28,155 @@ color: #111;
 text-align: center;
 }
 
-  /*Set black background color, white text */
-  .footer {
-    background-color: #555;
-    color: white;
-    padding-top: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  .footer, .push{
-    height:auto;
-  }
-  .social {
-    display: inline-block;
-  }
-  /* Remove the navbar's margin-bottom and rounded borders */ 
-  .navbar {
-    margin-bottom: 0;
-    border-radius: 0;
-    padding: 0px 15px;
-    text-decoration: none;
-    color:#eee;
-  }
-  .navbar-default { 
-    margin : 0 !important; 
-  }
-  
-  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-  .row.content {
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  /* Set gray background color and 100% height */
-  .sidenav {
-    padding-top: 20px;
-    background-color: #f5f5f5;
-    height: 100%;
-    font-size: 14px;
-  }
-    
-  /* On small screens, set height to 'auto' for sidenav and grid */
-  @media screen and (max-width: 767px) {
-    .sidenav {
-      height: auto;
-      padding: 15px;
-    }
+/*Set black background color, white text */
+.footer {
+background-color: #555;
+color: white;
+padding-top: 10px;
+position: relative;
+bottom: 0;
+width: 100%;
+/* Set the fixed height of the footer here */
+padding-right: 10px;
+padding-left: 10px;
+}
+.footer, .push{
+  height:auto;
+}
+.social {
+  display: inline-block;
+}
+/* Remove the navbar's margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 0px 15px;
+  text-decoration: none;
+  color:#eee;
+}
+.navbar-default { 
+  margin : 0 !important; 
+}
+.main_wrapper{
+  display:-webkit-box;
+  -webkit-box-orient:horizontal;
+}
 
-  .social-link {
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
-    width: 50px;
-    margin: 5px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    background-color: #fff;
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Set background color and 100% height */
+.side_news {
+  padding: 20px;
+  background-color: #9999ff;
+  height: 100%;
+  font-size: 12px;
+  margin-left:20px;
+}
+  
+/* On small screens, set height to 'auto' for side_news and grid */
+@media screen and (max-width: 767px) {
+.side_news {
+  height: auto;
+  padding: 15px;
+}
+/*make this section flexible using flex box 1*/
+.main_section{
+-webkit-box-flex:1;
+margin-left:40px;
+border:1px solid black;
+}
+
+.social-link {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  margin: 5px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: #fff;
 }
 /* start style home.html */
 
-  uib-slide img {
-    margin-bottom: 10px;
-    margin-left: 50px;
-    cursor: pointer;
-    display: block;
-    border: 2px solid #fff;
-    position:absolute;
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */ 
-    color:black;
-    width:80%;
-    }
+uib-slide img {
+  margin-bottom: 10px;
+  margin-left: 50px;
+  cursor: pointer;
+  display: block;
+  border: 2px solid #fff;
+  position:absolute;
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%); /* make all photos black and white */ 
+  color:black;
+  width:80%;
+  }
 
-    img{
-    margin:auto;
+  img{
+  margin:auto;
+  }
+    :hover {
+      box-shadow: 0px 1px 4px #444;
+      transition: all .2s ease-in-out;
+      border-color: #fff;
     }
-      :hover {
-        box-shadow: 0px 1px 4px #444;
-        transition: all .2s ease-in-out;
-        border-color: #fff;
-      }
-      
-      :active {
-        opacity: .74;
-        box-shadow: 0px 1px 8px #666;
-    }
-    /*about page */
+    
+    :active {
+      opacity: .74;
+      box-shadow: 0px 1px 8px #666;
+  }
+  /*about page */
 
-    .imgTitle{
-      text-align: center;
-    }
-    .img-responsive{
-      max-width: 100%;
-      height:auto;
-    }
-  
-  .column {
-   border:1px solid lightgray;
-   border-radius:3px;
-   padding:5px;
-   overflow: hidden;
-   position: relative;
-   width: 25%;
-   display: inline-block;
-   margin-right: 10px;
-   margin-bottom: 5px;
+  .imgTitle{
+    text-align: center;
   }
-  .checkboxes label {
-  display: inline-block;
-  margin-right:10px; 
-  padding:10px;
+  .img-responsive{
+    max-width: 100%;
+    height:auto;
   }
-  button .grey{
-    border-radius: 6px;
-  }
+
+.column {
+ border:1px solid lightgray;
+ border-radius:3px;
+ padding:5px;
+ overflow: hidden;
+ position: relative;
+ width: 25%;
+ display: inline-block;
+ margin-right: 10px;
+ margin-bottom: 5px;
+}
+.checkboxes label {
+display: inline-block;
+margin-right:10px; 
+padding:10px;
+}
+button .grey{
+  border-radius: 6px;
+}
 
 .price .grey {
-    background-color: #eee;
-    font-size: 20px;
+background-color: #eee;
+font-size: 20px;
 }
 
 .button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
+background-color: #4CAF50;
+border: none;
+color: white;
+padding: 10px 25px;
+text-align: center;
+text-decoration: none;
+font-size: 18px;
 }
 /* style event.html */
 .card div.repeat:nth-child(n+4):after {
-    display: table;
-    content: " ";
-    clear: both;
+display: table;
+content: " ";
+clear: both;
 }
 
 /* style music.html */
