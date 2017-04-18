@@ -1,32 +1,21 @@
-<h2>What can we do for you?</h2>
+<h2><em>This is what we can do for you</em></h2>
+
 <div class="card" ng-repeat="event in events">
   <event-info info="event"></event-info>
-</div>
+</div><br><br>
 
-   
-<h3 ng-model="title">{{reviewtitle}}</h3>
-<div id="slides_control" class="carousel-inner text-center" role="listbox">
-  <div class="carousel-inner" interval="myInterval">
-    <div class="item active" ng-repeat="slide in slides" active="slide.active">
-      <h3 class="textSlide" ng-model="review">{{slide.review}}</h3>
-      <span><em>{{slide.fan}}</em></span>
-    </div>
-      <div class="carousel-caption">
-        <h5>slide{{$index+1}}</h5>
-      </div>
-  </div>
-</div>
-
-<!-- <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <a href="#"><img src="http://placekitten.com/1600/600" /></a>
-      <div class="carousel-caption">
-        <h3>Meow</h3>
-        <p>Just Kitten Around</p>
-      </div>
+<div class="row"> 
+  <h3 ng-model="title">{{reviewtitle}}</h3>
+    <div id="slides_control" class="carousel-inner text-center" role="listbox">
+      <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+        <uib-slide ng-repeat="slide in slides" active="slide.active">
+          <p class="textSlide" ng-model="review">{{slide.review}}</p>
+          <span><em>{{slide.fan}}</em></span>
+        </uib-slide>
+          <div class="carousel-caption">
+            <p>slide{{$index+1}}</p>
+          </div>
+      </uib-carousel>
     </div>
 
-  <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
-      </div> -->
+ 

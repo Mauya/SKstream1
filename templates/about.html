@@ -8,7 +8,7 @@
       </ul>
 
       <div class="resp-tabs-container hor_1"> 
-        <div class="profileInfo" id={{member.id}} ng-repeat="member in members" | orderBy:"name">
+        <div class="profileInfo" id={{member.id}} ng-repeat="member in members | orderBy:'name'">
           <div class="profileImage small-image pull-left thumbnail">
             <img ng-src={{member.image}}  alt="member.name"/>
           </div>
@@ -21,6 +21,7 @@
           </div>
         </div>
       </div>
+    </div>
   </div>
   
 
