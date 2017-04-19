@@ -1,14 +1,16 @@
-<div id="container">
-  <h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3>
-    <div id="parentVerticalTab" ng-controller="aboutController">
-      <ul class="resp-tabs-list hor_1">
-        <li ng-repeat="member in members | orderBy:'name'">
+<h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3>
+  <div class="container">
+    <div class="col-md-7">
+      <div class="tabble tab-left">
+        <ul class="nav nav-tabs">
+          <li><a href="#" data-toggle="tab" ng-repeat="member in members | orderBy:'name'"></a>
           {{member.name}}
         </li>
       </ul>
+    </div>
 
-      <div class="resp-tabs-container hor_1"> 
-        <div class="profileInfo" id={{member.id}} ng-repeat="member in members | orderBy:'name'">
+      <div class="tabs-content"> 
+        <div class="tab-pane active" id="{{member.id}}" ng-repeat="member in members | orderBy:'name'">
           <div class="profileImage small-image pull-left thumbnail">
             <img ng-src={{member.image}}  alt="member.name"/>
           </div>
@@ -23,6 +25,7 @@
       </div>
     </div>
   </div>
+
   
 
 
