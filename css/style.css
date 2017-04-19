@@ -1,8 +1,3 @@
-/*styling the index page*/
-*{
-  margin:0;
-  padding:0;
-}
 html{
 overflow-y:scroll;
 }
@@ -11,11 +6,8 @@ padding-top:70px;
 margin: 0;
 padding: 0;
 position: relative;
-font-size: 14px;
+font-size: 12px;
 font-family: Arial,sans-serif;
-width:100%;
-display:-webkit-box;
--webkit-box-pack:center;
 }
 
 ul { list-style:none;
@@ -28,452 +20,184 @@ color: #111;
 text-align: center;
 }
 
-/*Set black background color, white text */
-.footer {
-background-color: #555;
-color: white;
-padding-top: 10px;
-position: relative;
-bottom: 0;
-width: 100%;
-/* Set the fixed height of the footer here */
-padding-right: 10px;
-padding-left: 10px;
-}
-.footer, .push{
-  height:auto;
-}
-.social {
-  display: inline-block;
-}
-/* Remove the navbar's margin-bottom and rounded borders */ 
-.navbar {
-  margin-bottom: 0;
-  border-radius: 0;
-  padding: 0px 15px;
-  text-decoration: none;
-  color:#eee;
-}
-.navbar-default { 
-  margin : 0 !important; 
-}
-.main_wrapper{
-  display:-webkit-box;
-  -webkit-box-orient:horizontal;
-}
-
-/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {
-  height: 100%;
-  overflow: hidden;
-}
-
-/* Set background color and 100% height */
-.side_news {
-  padding: 20px;
-  background-color: #9999ff;
-  height: 100%;
-}
-  
-/* On small screens, set height to 'auto' for side_news and grid */
-@media screen and (max-width: 767px) {
-.side_news {
-  height: auto;
-  padding: 15px;
-}
-.side_news p{
-  text-indent: 15px;
-  text-decoration:none;
-}
-audio {
-    background-color: #95b9c7;
-    margin:20px;
+  /*Set black background color, white text */
+  .footer {
+    background-color: #555;
+    color: white;
+    padding-top: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    padding-right: 10px;
+    padding-left: 10px;
   }
-/*make this section flexible using flex box 1*/
-.main_section{
--webkit-box-flex:1;
-margin-left:40px;
-border:1px solid black;
-}
+  .footer, .push{
+    height:auto;
+  }
+  .social {
+    display: inline-block;
+  }
+  /* Remove the navbar's margin-bottom and rounded borders */ 
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 0px 15px;
+    text-decoration: none;
+    color:#eee;
+  }
+  .navbar-default { 
+    margin : 0 !important; 
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f5f5f5;
+    height: 100%;
+    font-size: 14px;
+  }
+    
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
 
-.social-link {
-  display: inline-block;
-  height: 50px;
-  line-height: 50px;
-  width: 50px;
-  margin: 5px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  background-color: #fff;
+  .social-link {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    margin: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
 }
 /* start style home.html */
 
-uib-slide img {
-  margin-bottom: 10px;
-  margin-left: 50px;
-  cursor: pointer;
-  display: block;
-  border: 2px solid #fff;
-  position:absolute;
-  -webkit-filter: grayscale(90%);
-  filter: grayscale(90%); /* make all photos black and white */ 
-  color:black;
-  width:70%;
-  }
-
-  img{
-  margin:auto; 
-  }
-
-    :hover {
-      box-shadow: 0px 1px 4px #444;
-      transition: all .2s ease-in-out;
-      border-color: #fff;
+  uib-slide img {
+    margin-bottom: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+    display: block;
+    border: 2px solid #fff;
+    position:absolute;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    color:black;
     }
-    
-    :active {
-      opacity: .74;
-      box-shadow: 0px 1px 8px #666;
-  }
-  /*about page */
-}
-ul.resp-tabs-list, p {
-    margin: 0px;
-    padding: 0px;
-}
-.resp-tabs-list li {
-    font-weight: 600;
-    font-size: 14px;
-    display: block;
-    padding: 13px 15px;
-    margin: 0 4px 0 0;
-    list-style: none;
-    cursor: pointer;
-    float: left;
-}
-.resp-tabs-container {
-    padding: 10px;
-    background-color: #ffd9b3;
-    clear: left;
-}
-h2.resp-accordion {
-    cursor: pointer;
-    padding: 5px;
-    display: none;
-}
-.resp-tab-content {
-    display: none;
-    padding: 15px;
-}
-.resp-tab-active {
-  border: 1px solid #5AB1D0;
-  border-bottom: none;
-  margin-bottom: -1px;
-  padding: 12px 14px 14px 14px;
-  border-top: 4px solid #5AB1D0;
-  border-bottom: 0px #fff solid;
-}
-.resp-tab-active {
-    border-bottom: none;
-    background-color: #fff;
-}
-.resp-content-active, .resp-accordion-active {
-    display: block;
-}
-.resp-tab-content {
-    border: 1px solid #c1c1c1;
-  border-top-color: #5AB1D0;
-}
-h2.resp-accordion {
-    font-size: 13px;
-    border: 1px solid #c1c1c1;
-    border-top: 0px solid #c1c1c1;
-    margin: 0px;
-    padding: 10px 15px;
-}
-h2.resp-tab-active {
-    border-bottom: 0px solid #c1c1c1;
-    margin-bottom: 0px;
-    padding: 10px 15px;
-}
-h2.resp-tab-title:last-child {
-    border-bottom: 12px solid #c1c1c1 !important;
-    background: blue;
-}
-/*-----------Vertical tabs-----------*/
-.resp-vtabs ul.resp-tabs-list {
-    float: left;
-    width: 30%;
-}
-.resp-vtabs .resp-tabs-list li {
-    display: block;
-    padding: 15px 15px;
-    margin: 0 0 4px;
-    cursor: pointer;
-    float: none;
-    border: 1px solid #c1c1c1;
-}
-.resp-vtabs .resp-tabs-container {
-    padding: 0px;
-    background-color: #fff;
-    float: left;
-    width: 68%;
-    min-height: 250px;
-    border-radius: 4px;
-    clear: none;
-}
-.resp-vtabs .resp-tab-content {
-    border: none;
-    word-wrap: break-word;
-}
-.resp-vtabs li.resp-tab-active { 
-position: relative;
-z-index: 1;
-margin-right: -1px;
-padding: 14px 15px 15px 14px ;
-border-top: 1px solid;
-border: 1px solid #5AB1D0 ;
-border-left: 4px solid #5AB1D0;
-margin-bottom: 4px;
-border-right: 1px #FFF solid;
-}
-.resp-arrow {
-    width: 0;
-    height: 0;
-    float: right;
-    margin-top: 3px;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 12px solid #c1c1c1;
-}
-h2.resp-tab-active span.resp-arrow {
-    border: none;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 12px solid #9B9797;
-}
-/*-----------Accordion styles-----------*/
-h2.resp-tab-active {
-    background: #DBDBDB;/* !important;*/
-}
-.resp-easy-accordion h2.resp-accordion {
-    display: block;
-}
-.resp-easy-accordion .resp-tab-content {
-    border: 1px solid #c1c1c1;
-}
-.resp-easy-accordion .resp-tab-content:last-child {
-    border-bottom: 1px solid #c1c1c1;/* !important;*/
-}
-.resp-jfit {
-    width: 100%;
-    margin: 0px;
-}
-.resp-tab-content-active {
-    display: block;
-}
-h2.resp-accordion:first-child {
-    border-top: 1px solid #c1c1c1;/* !important;*/
-}
-/* breakpoint to set the accordion, when screen resolution changed*/
-@media only screen and (max-width: 767px) {
-ul.resp-tabs-list {
-    display: none;
-}
-h2.resp-accordion {
-    display: block;
-}
-.resp-vtabs .resp-tab-content {
-    border: 1px solid #C1C1C1;
-}
-.resp-vtabs .resp-tabs-container {
-    border: none;
-    float: none;
-    width: 100%;
-    min-height: 100px;
-    height:auto;
-    clear: none;
-}
-.resp-accordion-closed {
-    display: none !important;
-}
-.resp-vtabs .resp-tab-content:last-child {
-    border-bottom: 1px solid #c1c1c1 !important;
-}
-}
-#container {
-    width: 80%;
-    margin: 0 auto;
-}
-h3{
-    text-align:center;
-    font-size:26px;
-}
-.profileInfo .profileImage{
-    float:left;
-    padding: 7px 15px 0;
-}
-.profileInfo .profileImage img{
-    width:100px;
-    box-shadow: 0px 0px 4px 2px #ccc;
-    border-radius: 5px;
-    padding: 5px;
- }
-.profileInfo .profileName{
-    font-weight: bold;
-    font-size: 16px;
-}
-.resp-vtabs ul.resp-tabs-list{
-    width: 20%;
-    margin-top: 20px !important;
-}
-.resp-tab-active{
-    border: 1px solid #c1c1c1;
-}
-.resp-vtabs .resp-tabs-list li{
-    margin: 0;
-    padding: 3px 10px;
-}
-.resp-vtabs li.resp-tab-active{
-    margin: 0 -1px 0 0;
-    font-weight: bold;
-    border-right: 0px;
-    border-left: 1px solid #c1c1c1;
-}
-.resp-vtabs .resp-tabs-list li:first-child{
-    border-radius: 10px 0 0;
-}
-.resp-vtabs .resp-tabs-list li:last-child{
-    border-radius: 0 0 0 10px;
-}
-.resp-vtabs .resp-tabs-container{
-    border: 1px solid #c1c1c1;
-    border-bottom: 0;
-    border-right: 0;
-    border-top: 0;
-    border-radius: 0;
-    min-height: 315px;
-}
-@media only screen and (max-width: 768px) {
-    #container{
-        width: 100%;
+
+    img{
+    margin:auto;
     }
-h2.resp-tab-active,
-h2.resp-accordion{
-  font-size: 14px;
-  padding: 5px 15px;
-}
-h2.resp-tab-active span.resp-arrow,
-.resp-arrow,
-.profileinfo.resp-tab-content .profileName{
-  display: none;
-}
-
-.imgTitle{
-text-align: center;
-}
-.img-responsive{
-max-width: 100%;
-height:auto;
-}
-
-.column {
- border:1px solid lightgray;
- border-radius:3px;
- padding:5px;
- overflow: hidden;
- position: relative;
- width: 25%;
- display: inline-block;
- margin-right: 10px;
- margin-bottom: 5px;
-}
-.checkboxes label {
-display: inline-block;
-margin-right:10px; 
-padding:10px;
-}
-button .grey{
-  border-radius: 6px;
-}
+      :hover {
+        box-shadow: 0px 1px 4px #444;
+        transition: all .2s ease-in-out;
+        border-color: #fff;
+      }
+      
+      :active {
+        opacity: .74;
+        box-shadow: 0px 1px 8px #666;
+    }
+    .thumbnail{
+      display:inline-block;
+      width:200px;
+      height:75px;
+      margin:10px;
+      overflow: hidden;
+    }
+    .clearfix::after{
+      content:"";
+      clear:both;
+      display:table;
+    }  
+    .contact{
+      font-size:8px;
+    }
+  
+  .column {
+   border:1px solid lightgray;
+   border-radius:3px;
+   padding:5px;
+   overflow: hidden;
+   position: relative;
+   width: 25%;
+   display: inline-block;
+   margin-right: 10px;
+   margin-bottom: 5px;
+  }
+  .checkboxes label {
+  display: inline-block;
+  margin-right:10px; 
+  padding:10px;
+  }
+  button .grey{
+    border-radius: 6px;
+  }
 
 .price .grey {
-background-color: #eee;
-font-size: 20px;
+    background-color: #eee;
+    font-size: 20px;
 }
 
 .button {
-background-color: #4CAF50;
-border: none;
-color: white;
-padding: 10px 25px;
-text-align: center;
-text-decoration: none;
-font-size: 18px;
-}
-/* style event.html */
-/*.card div.repeat:nth-child(n+4):after {
-display: table;
-content: " ";
-clear: both;
-}*/
-.card {
- overflow: hidden;
- position: relative;
- display: inline-block;
- margin: 0 2px;
-}
-/*.btn {
-   background: transparent;
-   color: #000;
-   border: 1px solid #000;
-   font-size: 14px;
-   font-weight: 200;
-   padding:2px 1px;
-   border-radius: 2px;
-}*/
-
-#slides_control> div{
-  height: auto;
-}
-.textSlide{
-  margin:auto;
-  width: 200px;
-}
-#slides_control {
-position: absolute;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
 }
 /* style music.html */
 
 
 /*style photo.html */
-.albumImage img{
-  margin-bottom:10px;
+#gallery{
+  max-width: 80%;
+  margin: 15px auto;
+  background:  #e6e6ff;
+  padding: 15px;
 }
-.bandImage
-  .list{
-    list-style:none;
-    display:inline-grid;
-    height:250px;
-    overflow-x: auto; 
-  }
-.bandImage 
-img{
-  width:140px;
+.image-list{
+  display: flex;
   margin-bottom: 15px;
-  cursor: pointer;
-  display: block;
-  border:1px solid #000;
-  max-height: 115px;
-  justify-content: center;
   }
+   img{
+    cursor: pointer;
+    display: block;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    max-height: 115px;
+    justify-content: center;
+    max-width: 33%;
+    width: 100%;
+    }
 
-&:active{
-  opacity: 0.8;
-  box_shadow:0px 2px 6px #666;
+    :hover{
+      opacity: 0.8;
+    }
+
+.band-image  img{
+  height: auto;
+  width: 100%;
+}
+  .ng-enter{
+    transform: translateY(-100px);
+    transition: all 0.3s;
+    opacity: 0;
   }
-
- /*style contact page*/
-
-
-  
+  .ng-active{
+    opacity: 1;
+    transform: translateY(0);
+  } 

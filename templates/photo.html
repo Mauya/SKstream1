@@ -1,5 +1,26 @@
-  <h3>Our Photo Gallery</h3>
-  	<div class="row">
+<h3>Our Photo Gallery</h3>
+  <div class="col-sm-4 col-sx-12">
+    <div class="album" ng-repeat="image in images">
+      <div class="thumbnail">
+        <img class="image" style="width:200px; height:200px" ng-src="{{ image.image }}"> 
+        <p class="title">{{image.description}}</p>  
+      </div>
+    </div>
+  </div>
+
+
+<!--   <div class="row">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img ng-repeat="image in images" ng-src="{{image.image}}" alt="{{image.description}}" style="width:100%"/>
+          <div class="caption">
+            <p>{{image.description}}</p>
+          </div>
+      </div>
+    </div>
+  </div> -->
+
+<!--   	<div class="row">
   		<div class="albumImage">
     	<img ng-repeat="image in images" ng-src="{{currentImage.image}}" alt="{{currentImage.description}}"/>
     	</div>
@@ -13,4 +34,4 @@
       	</li>
       </ul>
   	</div>
-  </div>
+  </div> -->
