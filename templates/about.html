@@ -1,4 +1,31 @@
-<h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3>
+<div id="container">
+  <h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3>
+    <div id="parentVerticalTab" ng-controller="aboutController">
+      <ul class="resp-tabs-list hor_1">
+        <li ng-repeat="member in members | orderBy:'name'">
+          {{member.name}}
+        </li>
+      </ul>
+
+      <div class="resp-tabs-container hor_1"> 
+        <div class="profileInfo" id={{member.id}} ng-repeat="member in members | orderBy:'name'">
+          <div class="profileImage small-image pull-left thumbnail">
+            <img ng-src={{member.image}}  alt="member.name"/>
+          </div>
+          <div class="profileDescription">
+            <div class="profileName">
+              {{member.name}} 
+            </div>
+            <p><em> {{member.instrument}}</em></p>
+            <p>{{member.description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- <h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3>
   <div class="container">
     <div class="col-md-7">
       <div class="tabble tab-left">
@@ -26,7 +53,7 @@
     </div>
   </div>
 
-  
+   -->
 
 
   
