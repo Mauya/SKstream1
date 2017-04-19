@@ -43,31 +43,3 @@ app.controller('eventsController', ['$scope', function($scope) {
 }]);
 
 
-// app.controller('eventsController', ['$scope', function($scope) {
-//   $scope.events = [ 
-// 	  { 
-// 	    service: 'Live Music', 
-// 	    event: 'Weddings', 
-// 	    title: 'Big day', 
-// 	    price: 0.99 
-// 	  }, 
-// 	  { 
-// 	    service: 'staging intertainment', 
-// 	    title: 'Corporate events', 
-// 	    title: 'Chico Dusty', 
-// 	    price: 2.99 
-// 	  },
-// 	  {
-// 	    service: 'Social festivals',
-// 	    title: 'Social events',
-// 	    developer: 'Armando P.',
-// 	    price: 1.99
-// 	  },
-// 	  {
-// 	    service: 'Band Touring',
-// 	    title: 'Tours',
-// 	    developer: 'Forecast',
-// 	    price: 1.99
-// 	  }
-// 	];
-// }]);

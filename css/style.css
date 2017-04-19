@@ -73,8 +73,6 @@ padding-left: 10px;
   padding: 20px;
   background-color: #9999ff;
   height: 100%;
-  font-size: 12px;
-  margin-left:20px;
 }
   
 /* On small screens, set height to 'auto' for side_news and grid */
@@ -84,11 +82,12 @@ padding-left: 10px;
   padding: 15px;
 }
 .side_news p{
-  text-indent: 30px;
+  text-indent: 15px;
   text-decoration:none;
 }
 audio {
     background-color: #95b9c7;
+    margin:20px;
   }
 /*make this section flexible using flex box 1*/
 .main_section{
@@ -413,18 +412,18 @@ text-decoration: none;
 font-size: 18px;
 }
 /* style event.html */
-.card div.repeat:nth-child(n+4):after {
+/*.card div.repeat:nth-child(n+4):after {
 display: table;
 content: " ";
 clear: both;
-}
-/*.card {
+}*/
+.card {
  overflow: hidden;
  position: relative;
  display: inline-block;
- margin: 0 2px;*/
+ margin: 0 2px;
 }
-.btn {
+/*.btn {
    background: transparent;
    color: #000;
    border: 1px solid #000;
@@ -432,65 +431,49 @@ clear: both;
    font-weight: 200;
    padding:2px 1px;
    border-radius: 2px;
-}
-
+}*/
 
 #slides_control> div{
-  height: 150px;
+  height: auto;
 }
 .textSlide{
   margin:auto;
   width: 200px;
 }
 #slides_control {
-  position:absolute;
-  width: 400px;
-  left:50%;
-  top:20px;
- margin-left:-200px;
-
+position: absolute;
+}
 /* style music.html */
 
 
 /*style photo.html */
-#gallery{
-  max-width: 80%;
-  margin: 15px auto;
-  background:  #e6e6ff;
-  padding: 15px;
+.albumImage img{
+  margin-bottom:10px;
 }
-.image-list{
-  display: flex;
+.bandImage
+  .list{
+    list-style:none;
+    display:inline-grid;
+    height:250px;
+    overflow-x: auto; 
+  }
+.bandImage 
+img{
+  width:140px;
   margin-bottom: 15px;
+  cursor: pointer;
+  display: block;
+  border:1px solid #000;
+  max-height: 115px;
+  justify-content: center;
   }
-   img{
-    cursor: pointer;
-    display: block;
-    flex-direction: row;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    max-height: 115px;
-    justify-content: center;
-    max-width: 33%;
-    width: 100%;
-    }
 
-    :hover{
-      opacity: 0.8;
-    }
-
-.band-image  img{
-  height: auto;
-  width: 100%;
-}
-  .ng-enter{
-    transform: translateY(-100px);
-    transition: all 0.3s;
-    opacity: 0;
+&:active{
+  opacity: 0.8;
+  box_shadow:0px 2px 6px #666;
   }
-  .ng-active{
-    opacity: 1;
-    transform: translateY(0);
-  } 
+
+ /*style contact page*/
+
 
   
