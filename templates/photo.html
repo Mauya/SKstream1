@@ -1,37 +1,13 @@
 <h3>Our Photo Gallery</h3>
-  <div class="col-sm-4 col-sx-12">
-    <div class="album" ng-repeat="image in images">
-      <div class="thumbnail">
-        <img class="image" style="width:200px; height:200px" ng-src="{{ image.image }}"> 
-        <div class="desc">{{image.description}}</div>  
+  <div class="row_album">
+    <div class="col-sm-4 col-sx-12">
+      <div class="album" ng-repeat="image in images">
+        <div class="thumbnail">
+          <img class="image" style="width:200px; height:200px" ng-src="{{ image.image }}"> 
+          <div class="desc">{{image.description}}</div>  
+        </div>
       </div>
     </div>
   </div>
 
 
-<!--   <div class="row">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img ng-repeat="image in images" ng-src="{{image.image}}" alt="{{image.description}}" style="width:100%"/>
-          <div class="caption">
-            <p>{{image.description}}</p>
-          </div>
-      </div>
-    </div>
-  </div> -->
-
-<!--   	<div class="row">
-  		<div class="albumImage">
-    	<img ng-repeat="image in images" ng-src="{{currentImage.image}}" alt="{{currentImage.description}}"/>
-    	</div>
-    </div>
-
-    <div class="row">
-      <div class="bandImage">
-       <ul class="list">
-      	  <li ng-repeat="image in images | filter:categories" ng-click="setCurrentImage(image)"> 
-          <img ng-src="{{image.image}}" alt="{{image.description}}"/>
-      	</li>
-      </ul>
-  	</div>
-  </div> -->
