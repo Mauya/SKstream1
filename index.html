@@ -52,6 +52,11 @@
     <div class="main_wrapper">  
       <div class="row content">
         <div class=" sidebar_section col-sm-3 text-left">
+          <h4> Band activity Calendar</h4>
+            <div class="main_calendar" ng-controller="calendarController">
+              <calendar selected="day"></calendar>
+            </div>
+
           <h4>News Feeds</h4>
             <p>Sed fermentum nulla purus, vitae aliquam ex congue eu. Proin in commodo eros. Phasellus feugiat odio nec convallis hendrerit. Duis consequat purus dolor, nec dictum ipsum tempus sed. </p><button><a href="read">Read more...</a></button>
             <p>Nulla interdum sed velit a semper. Vivamus sed odio a justo pellentesque ullamcorper aliquam ut erat. Cras finibus ultrices dolor sollicitudin aliquet.</p><button><a href="read">Read more...</a></button>
@@ -72,49 +77,27 @@
   </div>
   <footer class="footer" style="background-color: #555; color:#fff">
       <div class="footer-container">
-        <div class="row">
+        <div class="footer row">
           <div class="footertop">
             <div id="text" class="col-md-4 col-sm-6">
               <h4 class="footertitle"><span>Booking Online</span></h4>
                 <p>booking@swingcrew.ie</p>
             </div>
+
             <div id="social-media" class="col-md-4 col-sm-6">
-              <div class="social-links">
               <h4 class="footertitle"><span>Share with friends</span></h4>
-                <ul class="footer__section footer__social social-links">
-                  <li>
-                    <a href="http://www.facebook.com/swingCrew" title="Facebook" class="icon-circle icon-circle--white">
-                      <i class="icon icon-facebook" aria-hidden="true"></i>
-                    </a>
-                    <span class="vh">Facebook</span>
-                  </li>
-                  <li>
-                    <a href="http://www.twitter.com/swingCrew" title="Twitter" class="icon-circle icon-circle--white">
-                      <i class="icon icon-twitter" aria-hidden="true"></i>
-                    </a>
-                    <span class="vh">Twitter</span>
-                  </li>
-                  <li>
-                    <a href="https://uk.pinterest.com/swingCrew/" title="Pinterest" class="icon-circle icon-circle--white">
-                      <i class="icon icon-pinterest" aria-hidden="true"></i>
-                    </a>
-                    <span class="vh">Pinterest</span>
-                  </li>
-                  <li>
-                    <a href="https://instagram.com/swingCrew/" title="Instagram" class="icon-circle icon-circle--white">
-                      <i class="icon icon-instagram" aria-hidden="true"></i>
-                    </a>
-                    <span class="vh">Instagram</span>
-                  </li>
-                  <li>
-                    <a href="https://plus.google.com/swingCrew/posts" title="Google Plus" class="icon-circle icon-circle--white">
-                      <i class="icon icon-googleplus" aria-hidden="true"></i>
-                      <span class="vh">Google Plus</span>
-                    </a>
-                  </li>                
-                </ul>
-              </div>
-            </div>
+                <div class="social-row">
+                  <div class="social-link">
+                    <ul>
+                      <li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="http://plus.google.com/"><i class="fa fa-google-plus"></i> </a></li>
+                    </ul>
+                  </div>
+                </div> 
+            </div>   
+
             <div id="subscribe-form" class="col-md-4 col-sm-6">
               <div class="subscribe">
               <h4 class="footertitle"><span>Subscribe for updates</span></h4>
@@ -129,14 +112,17 @@
               </div>
             </div>
             <div class="checkboxes">
-            <div id= "form" class="col-md-4 col-sm-6">
-            <label><input type="checkbox" name="newsletter" value="newsletter">Receive Newsletter</label>
-            <label><input type="checkbox" name="tour" value="tour" checked>Get Tour Update</label>
+              <div class="subscribe row">
+                <div id= "form" class="col-md-4 col-sm-6">
+                  <label><input type="checkbox" name="newsletter" value="newsletter">Receive Newsletter</label>
+                  <label><input type="checkbox" name="tour" value="tour" checked>Get Tour Update</label>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="row">
+
+        <div class="bottom row">
           <div class="footerbottom">
             <div class="footerlogo text-center">
               <p class="text-muted">
@@ -159,11 +145,12 @@
     <script src='js/controllers/musicController.js'></script>
     <script src='js/controllers/videoController.js'></script>
     <script src='js/controllers/photoController.js'></script>
+    <script src='js/controllers/calendarController.js'></script>
     <script src='js/directives/eventInfo.js'></script>
-    <script src='js/directives/priceInfo.js'></script>
+    <script src='js/directives/videoInfo.js'></script>
     <script src='js/directives/mediaplayer.js'></script>
     <script src='js/services/audioservice.js'></script>
-    <script src='js/directives/media/videoInfo.js'></script>
+    <script type='js/directives/calendar.js'></script>
   
 </body>
 </html>
