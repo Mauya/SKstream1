@@ -26,7 +26,7 @@
           <input ng-model="booking.telephone" type="text" class="form-control" id="telephone" name="telephone" placeholder="Telephone"/>
         </div>
       </div>
-    <div class="calendly">
+    <div class="calendar">
       <div class="col-sm-5">
         <div class="form-group">
           <p class="input-group">
@@ -44,8 +44,10 @@
              id="date-picker" 
              readonly
              ng-click="open($event)"
-             /><span class="input-group-btn">
-              <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+             ><span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="open($event)">
+              <i class="glyphicon glyphicon-calendar"></i>
+              </button>
             </span>        
           </p>
         </div>
