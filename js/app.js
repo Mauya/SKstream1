@@ -33,8 +33,8 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         templateUrl: 'templates/gallery.html',
         controller: 'galleryController'
     })  
-    .when('/music', {
-        templateUrl: 'templates/music.html',
+    .when('/audio', {
+        templateUrl: 'templates/audio.html',
         controller: 'musicController'
     })
     .when('/video', {

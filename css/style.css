@@ -328,6 +328,12 @@ calendar {
   display:block;
 }
 /* style music.html */
+#player{
+  text-align:center;
+}
+audio{
+  width:500px;
+}
 
 
 /*style photo.html */
