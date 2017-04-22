@@ -25,7 +25,7 @@
   
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="headerController">
+    <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-header">
         <a class="navbar-brand" href="/">Music Band Prototype</a>
      </div>
@@ -53,13 +53,10 @@
       <div class="row content">
         <div class=" sidebar_section col-sm-3 text-left">
           <h4> Band activity Calendar</h4>
-            <div class="main_calendar" ng-controller="calendarController">
-              <calendar selected="day"></calendar>
-            </div>
-
+           
           <h4>News Feeds</h4>
             <p>Sed fermentum nulla purus, vitae aliquam ex congue eu. Proin in commodo eros. Phasellus feugiat odio nec convallis hendrerit. Duis consequat purus dolor, nec dictum ipsum tempus sed. </p><button><a href="read">Read more...</a></button>
-            <p>Nulla interdum sed velit a semper. Vivamus sed odio a justo pellentesque ullamcorper aliquam ut erat. Cras finibus ultrices dolor sollicitudin aliquet.</p><button><a href="read">Read more...</a></button>
+            <p>Nulla interdum sed velit a semper. Vivamus sed odio a justo pellentesque ullamcorper aliquam ut erat. Cras finibus ultrices dolor sollicitudin aliquet.</p><button><a href="read">Read more...</a></button><br>
           <h4>Latest single</h4>
             <audio id="myaudio" controls>
               <source src="asset/music/pikachu-dance.make4fun.com.5223f.ogg" type="audio/ogg"/>
@@ -142,15 +139,15 @@
     <script src='js/controllers/bookingController.js'></script>
     <script src='js/controllers/pricingController.js'></script>
     <script src='js/controllers/GalleryController.js'></script>
-    <script src='js/controllers/musicController.js'></script>
+    <script src='js/controllers/audioController.js'></script>
     <script src='js/controllers/videoController.js'></script>
     <script src='js/controllers/photoController.js'></script>
-    <script src='js/controllers/calendarController.js'></script>
+    <!-- <script src='js/controllers/calendarController.js'></script> -->
     <script src='js/directives/eventInfo.js'></script>
     <script src='js/directives/videoInfo.js'></script>
-    <script src='js/directives/mediaplayer.js'></script>
+    <!-- <script src='js/directives/audioplayer.js'></script>
     <script src='js/services/audioservice.js'></script>
-    <script type='js/directives/calendar.js'></script>
+    <script type='js/directives/calendar.js'></script> -->
   
 </body>
 </html>
