@@ -19,6 +19,12 @@ font-size: 16px;
 color: #111;
 text-align: center;
 }
+ .sidenews{
+  width:250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
   /*Set black background color, white text */
   .footer {
@@ -32,6 +38,7 @@ text-align: center;
   .footer, .push{
     height:auto;
   }
+
   /* Remove the navbar's margin-bottom and rounded borders */ 
   .navbar {
     margin-bottom: 0;
@@ -66,124 +73,6 @@ text-align: center;
     }
 
   /*style sidebar calendar*/
-  .vertical-centre (@height) {
-    height:@height;
-    line-height:@height !important;
-    display:inline-block;
-    vertical-align:middle;
-}
-
-.border-box {
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-}
-
-@border-colour:#CCC;
-calendar {
-    float:left;
-    display:block;
-    .border-box;
-    background:white;
-    width:300px;
-    border:solid 1px @border-colour;
-    margin-bottom:10px;
-    
-    @secondary-colour:#2875C7;
-    @spacing:10px;
-    @icon-width:40px;
-    @header-height:40px;
-
-    >div.header {
-        float:left;
-        width:100%;
-        background:@secondary-colour;
-        height:@header-height;
-        color:white;
-        
-        >* { 
-            .vertical-centre(@header-height);
-        }
-        
-        >i {
-            float:left;
-            width:@icon-width;
-            font-size:1.125em;
-            font-weight:bold;
-            position:relative;
-            .border-box;
-            padding:0 @spacing;
-            cursor:pointer;
-        }
-        
-        >i.fa-angle-left {
-            text-align:left;
-        }
-        
-        >i.fa-angle-right {
-            text-align:right;
-            margin-left:@icon-width*-1;
-        }
-        
-        >span { 
-            float:left;
-            width:100%;
-            font-weight:bold;
-            text-transform:uppercase;
-            .border-box;
-            padding-left:@icon-width+@spacing;
-            margin-left:@icon-width*-1;
-            text-align:center;
-            padding-right:@icon-width;
-            color:inherit;
-        }
-    }
-    >div.week {
-        float:left;
-        width:100%;
-        border-top:solid 1px @border-colour;
-        
-        &:first-child {
-            border-top:none;
-        }
-        
-        >span.day {
-            float:left;
-            width:100%/7;
-            .border-box;
-            border-left:solid 1px @border-colour;
-            font-size:0.75em;
-            text-align:center;
-            .vertical-centre(30px);
-            background:white;
-            cursor:pointer;
-            color:black;
-            
-            &:first-child {
-                border-left:none;
-            }
-            
-            &.today {
-                background:#E3F2FF;
-            }
-            
-            &.different-month {
-                color:#C0C0C0;
-            }
-            
-            &.selected {
-                background:@secondary-colour;
-                color:white;
-            }
-        }
-        
-        &.names>span {
-            color:@secondary-colour;
-            font-weight:bold;
-        }
-    }
-}
-
-
   .main_section{
     background-color: #ff9966;
     margin-left: 40px;
@@ -191,6 +80,10 @@ calendar {
 
 .social-link {
     overflow: auto;
+    text-align:center;
+}
+.social-link ul li a{
+  display: inline-block;
 }
 
 .social-link li {
@@ -306,27 +199,101 @@ calendar {
     font-size: 18px;
 }
 /*style about page*/
-.tabs-left{
-  border-bottom:none;
+.nav-tabs{
+  width:25%;
+}
+.nav-tabs ul {
   padding-top:2px;
-  border-right:1px solid #ddd;
+  border:1px solid #ddd;
+  font-weight: 600;
+  font-size-adjust: 13px;
+  display:inline-block;
+  padding:0px;
+  margin:0;
+  list-style: none;
+  cursor:pointer;
+  float:left;
 }
-.tabs-left>li{
-  float:none;
-  margin-bottom:2px;
-  margin-left:-1px;  
+.nav-tabs li{
+  padding:10px;
+  margin-bottom:8px;
+  background-color: #33b5e5;
+  color: #fff;
 }
-.tabs-left>li.active>a,
-.tabs-left>li.active>a:hover,
-.tabs-left>li.active>a:focus{
-  border-bottom-color:#ddd;
+.tab-content{
+  width:75%;
+  padding:0px;
+  background-color:#999966;
+  clear:left;
+  color:#000;
+
+}
+.clearfix::after{
+  content: "";
+  clear:both;
+  display: table;
+}
+.nav-tabs li.active>a,
+.nav-tabs li.active>a:hover,
+.nav-tabs li.active>a:focus{
+  border-bottom-color:#0099cc;
   border-right-color:transparent;
 }
-.tabs-left>li>a{
-  border-radius:4px 0 0 4px;
-  margin-right:0;
-  display:block;
-}
+
+/*style event Page*/
+
+.textCarousel uib-carousel uib-slide{
+    margin-top: 40px;
+    margin-left: 80px;
+    cursor: pointer;
+    display: block;
+    border: 2px solid #fff;
+    position:relative;
+    background-color:#ff9966;
+    color:#000; 
+  }
+  .card{
+    overflow: hidden;
+    position:relative;
+    display:inline-block;
+    width: 23%;
+    margin-bottom: 20px;
+  }
+  .item h4{
+    font-size:18px;
+    font-style: normal;
+    margin:70px 0;
+  }
+  .item span{
+  font-style:italic;
+  }
+
+  p{
+    font-size:18px;
+    font-weight: 200;
+  }
+  .text_slide{
+    background: #eee;
+  }
+  .btn{
+    font-weight:200;
+    border-radius:6px;
+
+  }
+  .btn:hover{
+    color:rgb(255,80,80);
+    background:255,80,80,0.25;
+    transition: background 500ms;
+  }
+  /*style pricing page*/
+  .price{
+    background-color: #000;
+    color:#fff;
+    font-weight:700;
+    position: absolute;
+    text-align:center;
+  }
+
 /* style music.html */
 .audio_container{
   position:relative;
@@ -373,6 +340,16 @@ audio{
 #musica p:hover{
   background-color:#999966;
 }
+.row_download{
+  text-align:center; 
+  height:100%;
+  margin-left:50px;
+  padding:0 0 5px;
+  z-index: 9999; 
+}
+.row_download img{
+  margin-right: 50px;
+}
 
 
 /*style photo.html */
@@ -385,4 +362,8 @@ audio{
 div.desc{
   padding:15px;
   text-align:left;
+}
+/*style booking*/
+button i{
+  overflow:;
 }

@@ -1,22 +1,20 @@
-<h2><em>This is what we can do for you</em></h2>
+<h3><em>What We Offer</em></h3>
 
 <div class="card" ng-repeat="event in events">
   <event-info info="event"></event-info>
-</div><br><br>
+</div>
+<br>
 
-<div class="row"> 
-  <h3 ng-model="title">{{reviewtitle}}</h3>
-    <div id="slides_control" class="carousel-inner text-center" role="listbox">
-      <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
-        <uib-slide ng-repeat="slide in slides" active="slide.active">
-          <p class="textSlide" ng-model="review">{{slide.review}}</p>
-          <span><em>{{slide.fan}}</em></span>
-        </uib-slide>
-          <div class="carousel-caption">
-            <p>slide{{$index+1}}</p>
-          </div>
-      </uib-carousel>
-    </div>
-  </div>
+<div class="textCarousel">
+  <h4>{{reviewtitle}}</h4>
+    <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <uib-slide ng-repeat="review in reviews track by review.id" index="review.id">
+        <P class="text_slide"><strong>"{{review.review}}"></strong></P>
+        <br>
+        <span><em>{{slide.fan}}</em></span>
+      </uib-slide>      
+        <h5>{{slide.id}}</h5>
+    </uib-carousel>
+</div>
 
  
