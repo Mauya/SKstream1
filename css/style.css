@@ -328,21 +328,59 @@ calendar {
   display:block;
 }
 /* style music.html */
+.audio_container{
+  position:relative;
+  width:700px;
+  margin:0 auto;
+  background-color: #ffaa80;
+  color:#000;
+}
+.column{
+  width:inherit;
+}
+audio{
+  margin:0 15px 0 15px;
+  width:650px;
+}
+#audio_player{
+  background-color:#231F20;
+  margin:0 auto;
+}
 #player{
   text-align:center;
   background-color:#262626;
 }
+.rewind{
+  position:relative;
+  text-align:center;
+}
+#player p{
+  text-align:left;
+}
 audio{
   width:600px;
+}
+#musica{
+  margin:0;
+}
+#musica p{
+  background-color: #231F20;
+  cursor:pointer;
+  display:block;
+  margin:0;
+  Padding:20px 0;
+}
+#musica p:hover{
+  background-color:#999966;
 }
 
 
 /*style photo.html */
-img.album.repeat:nth-child(n+4){
+#album img{
   display:inline-block;
-  margin:5px;
-  border:1px solid #ccc;
-  width:180px;
+  margin:20px;
+  border:2px solid #000;
+  width:200px;
 }
 div.desc{
   padding:15px;

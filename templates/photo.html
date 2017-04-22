@@ -1,9 +1,9 @@
 <h3>Our Photo Gallery</h3>
   <div class="row_album">
-    <div class="col-sm-4 col-sx-12">
-      <div class="album" ng-repeat="img in images">
-        <div class="thumbnail">
-          <img class="image" style="width:200px; height:200px" ng-src="{{ img.image }}"> 
+    <div id="album">
+      <div class="col-md-12">      
+        <div class="col-md-4" ng-repeat="img in images">
+          <img class="image" ng-src="{{ img.image }}"> 
           <div class="desc">{{img.description}}</div>  
         </div>
       </div>

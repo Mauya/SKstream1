@@ -35,7 +35,7 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
     })  
     .when('/audio', {
         templateUrl: 'templates/audio.html',
-        controller: 'musicController'
+        controller: 'audioController'
     })
     .when('/video', {
         templateUrl: 'templates/video.html',

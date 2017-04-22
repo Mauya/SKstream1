@@ -19,7 +19,7 @@ app.controller('audioController', ['$scope', function($scope) {
     }
 
 
-    audioList: [
+    audiolist: [
 	  {id: '1', name: 'Neonlight', singer: 'Chris Young', path: 'http://hiperload.com/s/jh1u97u7d/s.mp3', length: '3:43'},
 	  {id: '2', name: 'Happy birthday swing', singer: 'Lucky Steven', path: 'http://hiperload.com/s/ek6c42n9w/s.mp3', length: '0:32'},
 	  {id: '3', name: 'What a wonderful world', singer: 'Louis Armstrong', path: 'http://hiperload.com/s/pm0l44l0u/s.mp3', length: '2:29'},
@@ -38,14 +38,14 @@ app.controller('audioController', ['$scope', function($scope) {
       run(audiolist[current], audio);
     });
     
-    $('.audio.next').on('click', function(){
+    $('#btnNext').on('click', function(){
       next();
       run(audiolist[current], audio);
       
       return false;
     });
     
-    $('.audio.prev').on('click', function(){
+    $('#btnPrev').on('click', function(){
       prev();
       run(audiolist[current], audio);
       
