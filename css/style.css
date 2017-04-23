@@ -57,10 +57,10 @@ text-align: center;
     overflow: hidden;
   }
   
-  /* Set gray background color and 100% height */
+  /* Set blue background color and 100% height */
   .sidebar_section {
     padding-top: 20px;
-    background-color: #cccccc;
+    background-color: #6666ff;
     height: 100%;
     font-size: 14px;
   }
@@ -238,6 +238,11 @@ text-align: center;
 .nav-tabs li.active>a:focus{
   border-bottom-color:#0099cc;
   border-right-color:transparent;
+}
+.tabs-left>li>a{
+  border-radius:4px 0 0 4px;
+  margin-right:0;
+  display:block;
 }
 
 /*style event Page*/
