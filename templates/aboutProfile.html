@@ -1,0 +1,19 @@
+<!-- <div class="col-sm-6 on-float">  -->
+<h3 class="header" ng-model="ProfileTitle">{{ProfileTitle}}</h3>
+  <div class="tab-content">
+    <div class="tab-pane active" id="{{profile.name}}" ng-repeat="profile in profiles | orderBy:'name'">
+      <div class="profileImage">
+        <img style="float:left" width="150" height="150" class="img-thumbnail rounded float-left" ng-src={{profile.image}}  alt={{profile.name}} width="200" height="200"/>
+          <div class="profileDescription">
+            <div class="profileName"><strong>
+              <h4>{{profile.name}}</h4> 
+              </strong></div>
+            <div><em> {{profile.instrument}}</em></div>
+            <p>{{profile.description}}</p>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <a href="about">Back to Band Profile List</a>
+<!-- </div> -->

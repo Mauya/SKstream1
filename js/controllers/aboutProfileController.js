@@ -1,11 +1,24 @@
 angular.module('RouteControllers', [])
-app.controller('aboutController', ['$scope', '$route', function($scope, $route){
-  var vm =this;
-    vm.reloadData=function(){
-      $route.reload();
-    }
-    $scope.memberTitle= "Band List";
-    $scope.members=[ 
+app.controller('aboutProfileController', ['$scope', '$route', '$routeParams', function($scope, $route, $routeParams){
+    $scope.ProfileTitle= "SwingCrew Band Profile";
+    $scope.routeParams = {};
+    $scope.routeParams.id = $routeParams.id;
+
+    var init = function () {
+      $scope.initCurrentParams = {};
+      $scope.$route = $route;
+      $scope.initCurrentParams.id = $scope.$route.current.params.id;
+    };
+    init();
+
+    $scope.$on('$routeChangeSuccess', function() {
+
+      $scope.routeChangeSuccessCurrentParams = {};
+      $scope.$route = $route;
+      $scope.routeChangeSuccessCurrentParams.id = $scope.$route.current.params.id;
+    });
+
+       $scope.profiles=[ 
     { 
       'id': '1',
       'image': 'images/about/member1.jpg', 

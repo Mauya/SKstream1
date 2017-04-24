@@ -1,8 +1,8 @@
 Final stream1 project for a band prototype.
 
-"# ProjectStream1" 
+"# SKStream1" 
 
-# Angular Todo App
+# Angular Todo App -Based on this for basis.
  
 ## Overview
  	This is base template for a band prototype that performs various events. This contains the core files that are needed to work on this peoject or fork it.

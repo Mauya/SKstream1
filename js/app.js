@@ -17,6 +17,10 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         templateUrl: 'templates/about.html',
         controller: 'aboutController'
     })
+    .when('/about/:id', {
+        templateUrl: 'templates/aboutProfile.html',
+        controller: 'aboutProfileController'
+    })
     .when('/events', {
         templateUrl: 'templates/events.html',
         controller: 'eventsController'

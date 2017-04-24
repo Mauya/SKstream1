@@ -1,32 +1,30 @@
 <h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3>
   <div id="container">
-    <div class="clearfix">
-      <div class="col-sm-3" id="profileVerticalTab">
-        <div class="tabs-list tabs-left">
-          <ul class="nav nav-tabs">
-            <li ng-repeat="member in members | orderBy:'name'">{{member.name}}</li>
-          </ul>
-      </div>
-    </div>
+    <div class="tabs-list">
+      <ul class="nav nav-tabs">
+        <li class="active" ng-repeat="member in members | orderBy:'name'"><a href="about/{{member.id}}" data-target=".tab-pane" data-toggle="tab">{{member.name}}</a></li>
+      </ul>
+  </div>
+</div>
 
-    <div class="col-sm-6"> 
+    <!-- <div class="col-sm-6 on-float"> 
       <div class="tab-content">
-        <div class="profile-data" id="{{member.id}}" ng-repeat="member in members | orderBy:'name'">
+        <div class="tab-pane active" id="{{member.name}}" ng-repeat="member in members | orderBy:'name'">
           <div class="profile-image">
-          <img style="float:left" class="img-thumbnail rounded float-left" ng-src={{member.image}}  alt={{member.name}} width="200" height="200"/>
+          <img style="float:left" width="150" height="150" class="img-thumbnail rounded float-left" ng-src={{member.image}}  alt={{member.name}} width="200" height="200"/>
             <div class="profileDescription">
               <div class="profileName"><strong>
               <h4>{{member.name}}</h4> 
               </strong></div>
               <div><em> {{member.instrument}}</em></div>
-              <div>{{member.description}}</div>
+              <p>{{member.description}}</p>
             </div>
           </div>  
         </div>
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
   
 
