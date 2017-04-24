@@ -2,13 +2,12 @@ angular.module('RouteControllers', [])
 app.controller('aboutProfileController', ['$scope', '$route', '$routeParams', function($scope, $route, $routeParams){
     $scope.ProfileTitle= "SwingCrew Band Profile";
     $scope.routeParams = {};
-    $scope.routeParams.id = $routeParams.id;
+    $scope.id = $routeParams.id.split('-');
 
     var init = function () {
       $scope.initCurrentParams = {};
       $scope.$route = $route;
       $scope.initCurrentParams.id = $scope.$route.current.params.id;
-      console.log('from init', $scope.initCurrentParams.id);
     };
     init();
 
@@ -17,7 +16,6 @@ app.controller('aboutProfileController', ['$scope', '$route', '$routeParams', fu
       $scope.routeChangeSuccessCurrentParams = {};
       $scope.$route = $route;
       $scope.routeChangeSuccessCurrentParams.id = $scope.$route.current.params.id;
-      console.log('from routeChangeSuccess', $scope.routeChangeSuccessCurrentParams.id);
     });
 
        $scope.profiles=[ 

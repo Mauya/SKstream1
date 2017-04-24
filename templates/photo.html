@@ -1,9 +1,12 @@
+<div><button type="button" class="btn btn-default btn-lg black-background white pull-right" onclick="history.go(-1);">Go back</button>
+
 <h3>Our Photo Gallery</h3>
+</div><br>
   <div class="row_album">
     <div id="album">
       <div class="col-md-12">      
         <div class="col-md-4" ng-repeat="img in images">
-          <img class="image" ng-src="{{ img.image }}"> 
+          <img class="thumbnail" ng-src="{{ img.image }}" width="242" height="200"> 
           <div class="desc">{{img.description}}</div>  
         </div>
       </div>
