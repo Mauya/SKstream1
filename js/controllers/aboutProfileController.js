@@ -1,8 +1,7 @@
 angular.module('RouteControllers', [])
 app.controller('aboutProfileController', ['$scope', '$route', '$routeParams', function($scope, $route, $routeParams){
-    $scope.ProfileTitle= "SwingCrew Band Profile";
     $scope.routeParams = {};
-    $scope.id = $routeParams.id.split('-');
+    $scope.memberId = $routeParams.id.split('-');
 
     var init = function () {
       $scope.initCurrentParams = {};
@@ -18,7 +17,7 @@ app.controller('aboutProfileController', ['$scope', '$route', '$routeParams', fu
       $scope.routeChangeSuccessCurrentParams.id = $scope.$route.current.params.id;
     });
 
-       $scope.profiles=[ 
+       $scope.members=[ 
     { 
       'id': '1',
       'image': 'images/about/member1.jpg', 
@@ -61,4 +60,16 @@ app.controller('aboutProfileController', ['$scope', '$route', '$routeParams', fu
       'description':'Duo Reges: constructio interrete. Odium autem et invidiam facile vitabis. Et quidem, inquit, vehementer errat; Quid enim est a Chrysippo praetermissum in Stoicis? Unum est sine dolore esse, alterum cum voluptate.'
     }
   ];
+  // member details menu described here. First Previous button
+      if($routeParams.memberId>0)
+         $scope.prevMember=number($routeParams.memberId)-1;
+       else
+        $scope.prevMember = $scope.members.length-1;
+
+  //next button
+      if(routeParams.memberId<$scope.members.length-1)
+        scope.NextMember = Nunber($routeParams.memberId)+1;
+      else
+        $scope.nextMember = 0;
+
 }]);

@@ -256,7 +256,7 @@ text-align: center;
 
 .textCarousel uib-carousel uib-slide{
     margin-top: 40px;
-    margin-left: 80px;
+    margin-left: 40px;
     cursor: pointer;
     display: block;
     border: 2px solid #fff;

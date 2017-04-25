@@ -1,14 +1,13 @@
-<h3 class="header" ng-model="ProfileTitle">{{ProfileTitle}}</h3>
-  <div class="tab-content">
+  <div class="profile-content">
     <div class="tab-pane active" id="{{profile.id}}" ng-repeat="profile in profiles | orderBy:'name'">
       <div class="profileImage">
-        <img  width="150" height="150" class="img-thumbnail rounded float-left" ng-src={{profile.image}}  alt={{profile.name}} width="200" height="200"/>
+        <img class="img-thumbnail rounded float-left" ng-src={{member[memberId].image}}  alt={{member[memberId].name}} width="150" height="150"/>
           <div class="profileDescription">
-            <div class="profileName"><strong>
-              <h4>{{profile.name}}</h4> 
-              </strong></div>
-            <div><em> {{profile.instrument}}</em></div>
-            <p>{{profile.description}}</p>
+            <div class="profileName">
+              <h4>{{member[memberId].name}}</h4> 
+              </div>
+            <div><em> {{member[memberId].instrument}}</em></div><br>
+            <p>{{member[memberId].description}}</p>
           </div>
         </div>  
       </div>

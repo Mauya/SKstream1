@@ -11,7 +11,7 @@
 
 <h4>{{reviewtitle}}</h4>
   <div class="textCarousel">
-    <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+    <uib-carousel  class="gray" active="active" interval="myInterval" no-wrap="noWrapSlides">
       <uib-slide ng-repeat="review in reviews track by review.id" index="review.id">
         <P class="text_slide"><strong>"{{review.review}}"></strong></P>
         <br>

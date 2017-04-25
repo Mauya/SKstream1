@@ -3,8 +3,7 @@
 <h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3><br>
   <div class="well">
     <ul class="nav nav-list">
-      <li class="active" ng-repeat="member in members | orderBy:'name'"><a href="about/{{member.id}}" data-target=".tab-pane">{{member.name}}</a></li>
+      <li class="active" ng-repeat="member in members | orderBy:'name'"><a href="#/about/{{member.indexOf(member)}}" data-target=".tab-pane">{{member.name}}</a></li>
     </ul>
   </div>
-</div>
 
