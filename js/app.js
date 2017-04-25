@@ -17,7 +17,7 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         templateUrl: 'templates/about.html',
         controller: 'aboutController'
     })
-    .when('/about/:id', {
+    .when('/about/:memID', {
         templateUrl: 'templates/aboutProfile.html',
         controller: 'aboutProfileController'
     })

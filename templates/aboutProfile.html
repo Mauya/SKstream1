@@ -1,16 +1,21 @@
   <div class="profile-content">
     <div class="tab-pane active" id="{{profile.id}}" ng-repeat="profile in profiles | orderBy:'name'">
       <div class="profileImage">
-        <img class="img-thumbnail rounded float-left" ng-src={{member[memberId].image}}  alt={{member[memberId].name}} width="150" height="150"/>
+        <img class="img-thumbnail rounded float-left" ng-src={{profile.image}}  alt={{profile.name}} width="150" height="150"/>
           <div class="profileDescription">
             <div class="profileName">
-              <h4>{{member[memberId].name}}</h4> 
+              <h4>{{profile.name}}</h4> 
               </div>
-            <div><em> {{member[memberId].instrument}}</em></div><br>
-            <p>{{member[memberId].description}}</p>
+            <div><em> {{profile.instrument}}</em></div><br>
+            <p>{{profile.description}}</p>
           </div>
         </div>  
       </div>
+    </div>
+
+    <div class="menu">
+    <a href="/about/:memID{{prevMember}}"><&nbsp; Previous</a>
+    <a href="/about/:memID{{nextMember}}">Next &nbsp;</a>
     </div>
 
     <a href="about">Back to Band Profile List</a>

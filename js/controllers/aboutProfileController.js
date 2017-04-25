@@ -1,7 +1,7 @@
 angular.module('RouteControllers', [])
 app.controller('aboutProfileController', ['$scope', '$route', '$routeParams', function($scope, $route, $routeParams){
     $scope.routeParams = {};
-    $scope.memberId = $routeParams.id.split('-');
+    $scope.id = $routeParams.id.split('-');
 
     var init = function () {
       $scope.initCurrentParams = {};
@@ -17,7 +17,7 @@ app.controller('aboutProfileController', ['$scope', '$route', '$routeParams', fu
       $scope.routeChangeSuccessCurrentParams.id = $scope.$route.current.params.id;
     });
 
-       $scope.members=[ 
+       $scope.profiles=[ 
     { 
       'id': '1',
       'image': 'images/about/member1.jpg', 
@@ -61,14 +61,14 @@ app.controller('aboutProfileController', ['$scope', '$route', '$routeParams', fu
     }
   ];
   // member details menu described here. First Previous button
-      if($routeParams.memberId>0)
-         $scope.prevMember=number($routeParams.memberId)-1;
+      if($routeParams.id>0)
+         $scope.prevMember=number($routeParams.id)-1;
        else
         $scope.prevMember = $scope.members.length-1;
 
   //next button
-      if(routeParams.memberId<$scope.members.length-1)
-        scope.NextMember = Nunber($routeParams.memberId)+1;
+      if(routeParams.id<$scope.members.length-1)
+        scope.nextMember = Number($routeParams.id)+1;
       else
         $scope.nextMember = 0;
 
