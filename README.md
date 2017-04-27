@@ -41,16 +41,19 @@ Final stream1 project for a band prototype.
     **bower install
 
     After installing the dependencies, also ensure http-server is installed and runnung. The project then run on localhost
+ ## one branch
+ **This branch is for the github pages (gh-pages).
     
 ## Testing
 	Testing is on-going but Angular2 is complex for any beginner and this becomes all important. Also the use of dependency injection makes it easy to test application code. 
  
 ## Contributing
 	*Sandra kadungure
-	*SyLwester Piorkowski (Contributor)
+	
 
 ##Acknowledgement
 	*Ali Ashik (Mentor)
-	*Yoni Lavi
+	*Yoni Lavi (Mentor )
 	*Tiffany Snell
 	*Ian Rufus (on audio directives and services)
+	*SyLwester Piorkowski (fellow student)
