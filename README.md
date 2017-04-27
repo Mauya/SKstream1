@@ -47,10 +47,10 @@ Final stream1 project for a band prototype.
  
 ## Contributing
 	*Sandra kadungure
-	*SyLwester Piorkowski (Contributor)
 
 ##Acknowledgement
 	*Ali Ashik (Mentor)
 	*Yoni Lavi
 	*Tiffany Snell
 	*Ian Rufus (on audio directives and services)
+	*SyLwester Piorkowski (fellow student help)
