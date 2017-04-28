@@ -4,7 +4,7 @@ app.controller('aboutController', ['$scope', '$route', function($scope, $route){
     vm.reloadData=function(){
       $route.reload();
     }
-    $scope.memberTitle= "Band List";
+    $scope.memberTitle= "The SwingCrew Members";
     $scope.members=[ 
     { 
       'id': '1',
