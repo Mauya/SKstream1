@@ -1,4 +1,3 @@
-angular.module('RouteControllers', [])
 app.controller('audioController', function($scope) {
 	$scope.musicTitle='The Swing Crew Music'; //can list as much of their music as they want.
   var audio=$('#audio-player')[0];

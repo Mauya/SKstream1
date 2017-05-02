@@ -1,4 +1,3 @@
-angular.module("RouteControllers", []);
 app.controller("bookingController", ["$scope", function($scope){
 	$scope.booking={Title:"For Special Events Make a Booking Here!"};
     this.selectEvent = function(setEvent) {

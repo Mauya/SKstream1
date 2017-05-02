@@ -1,4 +1,3 @@
-angular.module('RouteControllers', [])
 app.controller('aboutController', ['$scope', '$route', function($scope, $route){
   var vm =this;
     vm.reloadData=function(){

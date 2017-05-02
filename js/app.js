@@ -1,6 +1,5 @@
 var app = angular.module('bandApp', 
   ['ngRoute',
-   'RouteControllers',
    'ngAnimate', 
    'ngTouch', 
    'ui.bootstrap',
@@ -9,53 +8,51 @@ var app = angular.module('bandApp',
 
 app.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
-    .when('.', {
+    .when('/', {
         templateUrl: 'templates/home.html',
         controller: 'homeController'
     })
-    .when('about', {
+    .when('/about', {
         templateUrl: 'templates/about.html',
         controller: 'aboutController'
     })
-    .when('about/:memID', {
+    .when('/about/:memID', {
         templateUrl: 'templates/aboutProfile.html',
         controller: 'aboutProfileController'
     })
-    .when('events', {
+    .when('/events', {
         templateUrl: 'templates/events.html',
         controller: 'eventsController'
     })
-    .when('pricing', {
+    .when('/pricing', {
         templateUrl: 'templates/pricing.html',
         controller: 'pricingController'
     })
-    .when('booking', {
+    .when('/booking', {
         templateUrl: 'templates/booking.html',
         controller: 'bookingController'
     })
-    .when('gallery', {
+    .when('/gallery', {
         templateUrl: 'templates/gallery.html',
         controller: 'galleryController'
     })  
-    .when('audio', {
+    .when('/audio', {
         templateUrl: 'templates/audio.html',
         controller: 'audioController'
     })
-    .when('video', {
+    .when('/video', {
         templateUrl: 'templates/video.html',
         controller: 'videoController'
     })
-    .when('photo', {
+    .when('/photo', {
         templateUrl: 'templates/photo.html',
         controller: 'photoController'
     })  
-    .when('contact', {
+    .when('/contact', {
         templateUrl: 'templates/contact.html',
         controller: 'contactController'
     })      
-    .otherwise({
-        redirectTo: '.'
-    })
+    
     $locationProvider.html5Mode(true);    
 }]);
 

@@ -1,4 +1,3 @@
-angular.module('RouteControllers', [])
 app.controller('contactController', function($scope){
 $scope.contacts =[
  {

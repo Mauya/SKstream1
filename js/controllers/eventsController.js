@@ -1,4 +1,3 @@
-angular.module('RouteControllers', [])
 app.controller('eventsController', ['$scope', function($scope) {
   $scope.events = [ 
 	  { 
