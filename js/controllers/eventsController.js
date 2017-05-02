@@ -1,5 +1,4 @@
 app.controller('eventsController', ['$scope', function($scope) {
-  $scope.events = {heading:"Our Services"};
   $scope.events = [ 
 	  { 
 	    image: 'images/events/wedding1.jpg',	    
