@@ -1,6 +1,9 @@
-app.controller('headerController', function($scope) 
+app.controller('headerController', ['$scope', '$location', '$route', function($scope, $location, $route) 
 { 
-    $scope.header = {name: "header.html", url: "header.html"};
-});
+    $scope.isActive = function (viewLocation) {
+     var active = (viewLocation === $location.path());
+     return active;
+    }
+}]);
 
 
