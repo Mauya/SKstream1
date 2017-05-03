@@ -25,14 +25,13 @@
   
 </head>
 <body>
-  <heade>
-    
-  </heade>
+
+  <ng-transclude></ng-transclude>
 
   <div class="container-fluid text-center">
     <div class="main_wrapper">  
       <div class="row content">
-        <div class=" sidebar_section col-sm-3 text-left">
+        <div class=" sidebar_section col-sm-3 col-sx-12 text-left">
           <h4> Band Activity Calendar</h4><br>
            
           <h4>News Feeds</h4>
@@ -51,7 +50,7 @@
             <p class="sidenews">The wedding for John Wayer and Mabel White provided the band with an opportunity to travel to the East and meet some fans. The wedding itself was beautiful with an amazing reception crowd.</p><button><a href="read">Read more...</a></button><br>
         </div>
       <div class="main_section">
-        <div class="col-sm-8 text-left"> 
+        <div class="col-sm-9 col-sx-12 text-left"> 
           <div ng-view></div>
         </div>
       </div>
