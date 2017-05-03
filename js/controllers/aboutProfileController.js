@@ -1,6 +1,6 @@
 app.controller('aboutProfileController', ['$scope', '$route', '$routeParams', function($scope, $route, $routeParams){
     $scope.routeParams = {};
-    $scope.id = $routeParams.id;
+    $scope.profiles = $routeParams.profiles.id;
 
     var init = function () {
       $scope.initCurrentParams = {};

@@ -2,8 +2,8 @@
 
 <h3 class="header" ng-model="memberTitle">{{memberTitle}}</h3><br>
   <div class="well">
-    <ul class="nav nav-list">
-      <li class="active" ng-repeat="member in members | orderBy:'name'"><a href="/about/:memID{{member.id}}" data-target=".tab-pane">{{member.name}}</a></li>
+    <ul class="nav nav-list" align="center">
+      <li class="active" ng-repeat="member in members | orderBy:'name'"><a href="/aboutProfile/:memID{{member.id}}" data-target=".tab-pane">{{member.name}}</a></li>
     </ul>
   </div>
 
