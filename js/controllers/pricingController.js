@@ -1,5 +1,6 @@
 app.controller('pricingController', function($scope) {
-  $scope.packages = [ 
+	$scope.pricingTitle = "Our Price Packages" 
+  	$scope.packages = [ 
 	  { 
 	    type: 'Bronze', 
 	    price: '£599', 
@@ -25,4 +26,4 @@ app.controller('pricingController', function($scope) {
 	    contact: 'Enquire Today'
 	  }
 	];
-}]);
+});
