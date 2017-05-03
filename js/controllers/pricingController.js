@@ -1,4 +1,4 @@
-app.controller('pricingController', ['$scope', function($scope) {
+app.controller('pricingController', function($scope) {
   $scope.packages = [ 
 	  { 
 	    type: 'Bronze', 
