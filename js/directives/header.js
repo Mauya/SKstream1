@@ -5,6 +5,6 @@ app.directive('header', function() {
       info: '=' 
     },
     templateUrl: 'js/directives/header.html',
-    controller: "headerController"
+    controller: 'headerController'
   }; 
 });
