@@ -224,6 +224,9 @@ text-align: center;
   color: #fff;
   display:block;
 }
+.nav-list li a{
+
+}
 .well{
   background-color:#0a0a0f;
 }
@@ -245,9 +248,9 @@ text-align: center;
   clear:both;
   display: table;
 }
-.nav-tabs li.active>a,
-.nav-tabs li.active>a:hover,
-.nav-tabs li.active>a:focus{
+.nav-list li.active>a,
+.nav-list li.active>a:hover,
+.nav-list li.active>a:focus{
   border-bottom-color:#0099cc;
   border-right-color:transparent;
 }
