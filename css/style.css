@@ -216,12 +216,12 @@ text-align: center;
   margin:0;
   list-style: none;
   cursor:pointer;
+  font: 20px bold arial, sans-serif;
 
 }
  .nav-list li{
   padding:10px;
-  display:block;
-  font: 20px bold arial, sans-serif;
+  display:block;  
 }
 .nav-list li a{
 
