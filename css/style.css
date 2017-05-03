@@ -221,7 +221,10 @@ text-align: center;
 }
  .nav-list li{
   padding:10px;
-  display:block;  
+  display:block;
+  color:#333399;
+  text-decoration: underline;
+  font-size: 24px;
 }
 .nav-list li a{
 
