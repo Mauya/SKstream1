@@ -220,15 +220,14 @@ text-align: center;
 }
  .nav-list li{
   padding:10px;
-  background-color: #33b5e5;
-  color: #fff;
   display:block;
+  font: 20px bold arial, sans-serif;
 }
 .nav-list li a{
 
 }
 .well{
-  background-color:#0a0a0f;
+  background-color:black;
 }
 
 .tab-content{
