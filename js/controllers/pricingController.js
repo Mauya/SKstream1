@@ -1,5 +1,5 @@
-app.controller('pricingController', function($scope) {
-	$scope.pricingTitle = "Our Price Packages" 
+app.controller ('pricingController', function($scope) {
+	$scope.pricing ={title:"Our Price Packages"}; 
   	$scope.packages = [ 
 	  { 
 	    type: 'Bronze', 
