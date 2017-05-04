@@ -1,15 +1,18 @@
-<h3>{{home.title}}</h3>
-  <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-    <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-      <img ng-src="{{slide.image}}" style="height:350px; width:500px;">
-    </uib-slide>
-      <div class="carousel-caption">
-      	<h3>{{slide.caption}}</h3>
-        <h5>{{slide.id}}</h5>
-      </div>
+<div id="carouselWrapper" text-align="center">
+  <h3>{{home.title}}</h3>	
+  	<uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+    	<uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+      		<img ng-src="{{slide.image}}" style="height:350px; width:500px;">
+    	</uib-slide>
+  		<div class="carousel-caption">
+  			<h3>{{slide.caption}}</h3>
+    		<h5>{{slide.id}}</h5>
+  		</div>
   	</uib-carousel>
+</div>
 
-<h4>{{home.title2}}</h4>
+
+<h4><em>{{home.title2}}</em></h4>
 <p> Welcome to the official site of <strong>SwingCrew.</strong> SwingCrew is a collaboration between Jazz and Swing music. We have six frequent band members who started the band while they were college students. </p> 
 
 <p>The Music is well written and formatted by the group leader Greg Firsher. Our type of Music has a strong Swing focus making it suitable for events and gatherings.</p>
