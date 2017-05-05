@@ -1,6 +1,3 @@
-html{
-overflow-y:scroll;
-}
 body{
 padding-top:70px;
 margin: 0;
@@ -17,7 +14,7 @@ font-family: Arial,sans-serif;
   flex:1;
 }
 #sidebar-section{
-  background-color:#CCCCCC;
+  background-color:#6666ff;
 }
 @media (min-width:992px) {
   #sidebar-section{
