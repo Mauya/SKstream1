@@ -5,42 +5,9 @@ body{
 padding-top:70px;
 margin: 0;
 padding: 0;
-position: absolute;
-display:flex;
-flex-direction:column;
-min-height: 100vh;
+position: relative;
 font-size: 12px;
 font-family: Arial,sans-serif;
-}
-.container-fluid1{
-  display:flex;
-  flex:1;
-}
-#sidebar-section{
-  background-color:#6666ff;
-}
-@media (min-width:992px) {
-  #sidebar-section{
-    position:fixed;
-    bottom:0;
-    top:0;
-    left:0;
-    z-index:1000;
-    display:block;
-    background-color: #6666ff;
-    height: 100%;
-    font-size: 12px;
-  }
-}
- .sidenews{
-  height:100%;
-  width:100%;
-  padding:5px;
-  margin:0;
-  position:relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 ul { list-style:none;
@@ -52,20 +19,23 @@ font-size: 16px;
 color: #111;
 text-align: center;
 }
+ .sidenews{
+  width:250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
-/*Set black background color, white text */
-@media screen and (min-width:767px) and (max-width:991px){
-  #site-footer {
+  /*Set black background color, white text */
+  .footer {
     background-color: #555;
     color: #cccccc;
     padding-top: 10px;
-    height:150px;
-    position:fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
   }
-}
-  .site-footer, .push{
+  .footer, .push{
     height:auto;
   }
   .checkbox input{
@@ -95,12 +65,25 @@ text-align: center;
     overflow: hidden;
   }
   
-/*style sidebar calendar*/
-  #main_section{
-    background-color: #ffffff;
+  /* Set blue background color and 100% height */
+  .sidebar_section {
+    padding-top: 20px;
+    background-color: #6666ff;
+    height: 100%;
+    font-size: 14px;
+  }
+    
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidebar_section {
+      height: auto;
+      padding: 10px;
+    }
+
+  /*style sidebar calendar*/
+  .main_section{
+    background-color: #ff9966;
     margin-left: 40px;
-    position:relative;
-    height:100%;
   }
 
 .social-link {
@@ -148,10 +131,10 @@ text-align: center;
   opacity: .7;
 }
 /* start style home.html */
-  .uib-carousel>div{
-    margin-top: 40px;
-    max-height:400px;
-    background-color: #000;    
+  #mycarousel{
+    height:350px;
+    width:400px;
+    background-color: #000;
 
   }
 
@@ -164,7 +147,7 @@ text-align: center;
     position:absolute;
     color:#fff;
     overflow:hidden;
-    max-width: 70%;
+    text-align:center;
     }
     img{
       margin:auto;
