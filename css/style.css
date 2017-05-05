@@ -27,7 +27,7 @@ font-family: Arial,sans-serif;
     left:0;
     z-index:1000;
     display:block;
-    background-color: #CCCCCC;
+    background-color: #6666ff;
     height: 100%;
     font-size: 12px;
   }
@@ -100,6 +100,7 @@ text-align: center;
     background-color: #ffffff;
     margin-left: 40px;
     position:relative;
+    height:100%;
   }
 
 .social-link {
