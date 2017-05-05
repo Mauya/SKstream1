@@ -24,58 +24,62 @@
     </style>  
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-header">
+    <div id="header" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
         <a class="navbar-brand" href=".">MONKEES</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li ng-class="{ active: isActive('.')}"><a href=".">Home</a>
-      </li>
-      <li ng-class="{ active: isActive('about')}"><a href="about">About Us</a></li>
-      <li ng-class="{ active: isActive('events')}"><a href="events">Events</a></li>
-      <li ng-class="{ active: isActive('pricing')}"><a href="pricing">Pricing</a></li>
-      <li ng-class="dropdown">      
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery
-              <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li ng-class="{ active: isActive('audio')}"><a href="audio">Audio</a></li>
-          <li ng-class="{ active: isActive('videos')}"><a href="video">video</a></li>
-          <li ng-class="{ active: isActive('photo')}"><a href="photo">Photo</a></li> 
-        </ul>
-      </li>
-      <li ng-class="{ active: isActive('booking')}"><a href="booking">Book Online</a></li>
-      <li ng-class="{ active: isActive('contact')}"><a href="contact">Contact Us</a></li>
-    </ul>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li ng-class="{ active: isActive('.')}"><a href=".">Home</a>
+          </li>
+          <li ng-class="{ active: isActive('about')}"><a href="about">About Us</a></li>
+          <li ng-class="{ active: isActive('events')}"><a href="events">Events</a></li>
+          <li ng-class="{ active: isActive('pricing')}"><a href="pricing">Pricing</a></li>
+          <li ng-class="dropdown">      
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery
+                  <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li ng-class="{ active: isActive('audio')}"><a href="audio">Audio</a></li>
+              <li ng-class="{ active: isActive('videos')}"><a href="video">video</a></li>
+              <li ng-class="{ active: isActive('photo')}"><a href="photo">Photo</a></li> 
+            </ul>
+          </li>
+          <li ng-class="{ active: isActive('booking')}"><a href="booking">Book Online</a></li>
+          <li ng-class="{ active: isActive('contact')}"><a href="contact">Contact Us</a></li>
+      </ul>
   </div>
-  <div class="container-fluid text-center">
+  <div class="container-fluid1 text-center">
     <div class="main_wrapper">  
       <div class="row content">
-        <div class=" sidebar_section col-sm-3 text-left">
-          <h4> Band Activity Calendar</h4><br>
-           
-          <h4>News Feeds</h4>
-            <p class="sidenews">A wonderful performance by the swingCrew at the Lavangu grounds. The crowds were mesmerised with the amazing staging and sound. Greg Firsher one of the band member said "We were so happy with the engagement of the crowd, it was amazing". Duis consequat purus dolor, nec dictum ipsum tempus sed. </p><button><a href="read">Read more...</a></button>
-            <p class="sidenews">The swingCrew invited to Open for JZ and Kanye West in their Ireland Summer tour. A lot of expectations from their fans.</p><button><a href="read">Read more...</a></button><br>
+        <div id=" sidebar_section">
+          <div class="col-sm-3 text-left">
+            <h4> Band Activity Calendar</h4><br>
+       
+            <h4>News Feeds</h4>
+              <p class="sidenews">A wonderful performance by the swingCrew at the Lavangu grounds. The crowds were mesmerised with the amazing staging and sound. Greg Firsher one of the band member said "We were so happy with the engagement of the crowd, it was amazing". Duis consequat purus dolor, nec dictum ipsum tempus sed. </p><button><a href="read">Read more...</a></button>
+              <p class="sidenews">The swingCrew invited to Open for JZ and Kanye West in their Ireland Summer tour. A lot of expectations from their fans.</p><button><a href="read">Read more...</a></button><br>
 
-          <h4>Latest single</h4>
-            <audio id="myaudio" controls size="40">
-              <source src="asset/music/pikachu-dance.make4fun.com.5223f.ogg" type="audio/ogg"/>
-              <source src="asset/music/pikachu-dance.make4fun.com.5223f.mp3" type="audio/mpeg"/>
-            </audio>
-              <p> Pikachu-dance</p><br>
+            <h4>Latest single</h4>
+              <audio id="myaudio" controls size="40">
+                <source src="asset/music/pikachu-dance.make4fun.com.5223f.ogg" type="audio/ogg"/>
+                <source src="asset/music/pikachu-dance.make4fun.com.5223f.mp3" type="audio/mpeg"/>
+              </audio>
+                <p> Pikachu-dance</p><br>
 
-          <h4> Events Blog</h4>
-          <h5>Wedding Titanic</h5>
-            <p class="sidenews">The wedding for John Wayer and Mabel White provided the band with an opportunity to travel to the East and meet some fans. The wedding itself was beautiful with an amazing reception crowd.</p><button><a href="read">Read more...</a></button><br>
-        </div>
-      <div class="main_section">
-        <div class="col-sm-9 text-left"> 
-          <div ng-view></div>
+            <h4> Events Blog</h4>
+            <h5>Wedding Titanic</h5>
+              <p class="sidenews">The wedding for John Wayer and Mabel White provided the band with an opportunity to travel to the East and meet some fans. The wedding itself was beautiful with an amazing reception crowd.</p><button><a href="read">Read more...</a></button><br>
+            </div>
+          </div>
+          <div id="main_section">
+          <div class="col-sm-9 text-left"> 
+            <div ng-view></div>
+          </div>
+        </div>        
         </div>
       </div>
     </div>
-  </div>
-  <footer class="footer" style="background-color: #555; color:#fff">
+
+    <footer id="site-footer" class="site-footer" style="background-color: #555; color:#fff">
       <div class="footer-container">
         <div class="footer row">
           <div class="footertop">
