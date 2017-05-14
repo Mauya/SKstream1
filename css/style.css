@@ -19,25 +19,6 @@ h1,h2,h3,h4{
   color: #111;
   text-align: center;
 }
-.sidenews{
-  width:250px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/*Set black background color, white text */
-.footer {
-  background-color: #555;
-  color: #cccccc;
-  padding-top: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-.footer, .push{
-  height:auto;
-}
 .checkbox input{
   display:inline-block;
 }
@@ -64,13 +45,19 @@ h1,h2,h3,h4{
   height: 100%;
   overflow: hidden;
 }
-
 /* Set blue background color and 100% height */
 .sidebar_section {
+  width:200px;
   padding-top: 20px;
-  background-color: #6666ff;
+  background-color: #D8D8D8;
   height: 100%;
   font-size: 14px;
+}
+
+.sidenews{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
@@ -82,8 +69,21 @@ h1,h2,h3,h4{
 
   /*style sidebar calendar*/
   .main_section{
-    background-color: #ff9966;
+    background-color: #E6E6E6;
     margin-left: 40px;
+  }
+
+  /*Set black background color, white text */
+  .footer {
+    background-color: #555;
+    color: #cccccc;
+    padding-top: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer, .push{
+    height:auto;
   }
 
   .social-link {
